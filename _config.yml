@@ -1,11 +1,11 @@
 # Site settings
 title: Myst1cS04p
 email: myst1cs04p@gmail.com
-url: https://youtube.com
-description: ""
-keywords: "your keywords, separated by commas"
-skills: "Game Developer - Intellectual"
-meta_author: N. S.
+url: https://myst1cs04p-real.github.io 
+description: "Portfolio of Myst1cS04p - self-taught game developer"
+keywords: "game dev, indie games, unity, portfolio, myst1cs04p"
+skills: "Game Developer - Systems Thinker - Prototype Alchemist"
+meta_author: Myst1cS04p
 
 # Google webmaster tools
 google_verify:
@@ -25,33 +25,29 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
+  primary: aa18bc #80B3FF
+  primary-rgb: "170,24,188" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
+  copyright: Myst1cS04p
   location: Location
-  social: Around the Web
+  social: Connect
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+  - title: itch.io
+    url: https://myst1cs04p.itch.io/
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/myst1cs04p-real
+  - title: discord
+    url: https://discordapp.com/users/1211164501614010381
 
 # Credits content
-credits: 'Built with Github Pages with the Freelancer theme.'
+credits: 'Custom Jekyll build with the Freelancer theme.'
 
 # Build settings
 markdown: kramdown
