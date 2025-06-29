@@ -171,31 +171,7 @@ header .intro-text .skills {
     border: 0;
 }
 
-.profile-pic {
-    max-width: 150px;
-    width: 30%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto;
-    border-radius: 50%;
-    object-fit: cover;
-}
 
-@media (max-width: 768px) {
-    .profile-pic {
-        max-width: 100px;
-        width: 50%;
-    }
-
-    .star-primary {
-        border-color: white;
-
-        color: {
-                {
-                site.color.secondary-dark
-            }
-        }
-    }
 
 body{
     background-color: #{{ site.color.bg }};
