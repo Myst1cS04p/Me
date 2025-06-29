@@ -171,9 +171,12 @@ header .intro-text .skills {
     border: 0;
 }
 
+body{
+    background-color: #{{ site.color.bg }};
+}
+
 section {
     padding: 100px 0;
-    color:aqua
 }
 
 section h2 {
