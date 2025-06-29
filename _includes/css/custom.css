@@ -13,3 +13,8 @@
         max-width: 100px;
         width: 50%;
     }
+
+.star-primary{
+    border-color: white;
+    color: {{ site.color.secondary-dark }}
+}
