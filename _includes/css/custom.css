@@ -1,0 +1,15 @@
+.profile-pic {
+    max-width: 150px;
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .profile-pic {
+        max-width: 100px;
+        width: 50%;
+    }
