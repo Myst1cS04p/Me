@@ -1,11 +1,38 @@
 ---
 layout: default
 modal-id: 6
-date: 2014-07-15
-img: submarine.png
+date: 2024-07-15
+img: Chef's Circuit Icon.jpg
 alt: image-alt
 project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+category: Team Game Jam
+description: "Slingshot-based platformer | Game Jam Entry (MLabs 2024 Summer Program)
+
+Overview:
+Chef’s Circuit is a side-scrolling platformer where players launch food characters through chaotic obstacle courses in a race to land in a boiling pot. The core mechanic is a slingshot movement system, enhanced by elements like bouncing mushrooms, knife-gate hazards, protective boost bubbles, and dynamic moving platforms.
+
+My Role & Contributions:
+
+Designed and implemented the core slingshot movement mechanic in Unity (C#)
+
+Built reusable platforming components, including bounce pads and bubble boost triggers
+
+Developed level layout and prototyping tools to speed up iteration
+
+Managed codebase structure and ensured modularity despite rapid changes
+
+Development Context:
+The game was created in a team of four under tight jam constraints. While I initially aimed to lead with collaboration and shared ownership, the process was derailed by internal conflict—including unilateral design changes, repeated system overwrites, and poor communication from certain team members. This created instability in the codebase and significantly slowed progress.
+
+What I Learned:
+
+How to maintain clean architecture in a volatile team environment
+
+When to stand my ground technically—and when to let go
+
+Conflict resolution under stress, and how to keep a team focused on outcomes
+
+The importance of documenting systems to avoid breakdowns when teams scale or splinter
+
+Though the final product didn’t fully reflect my vision, the project taught me how to build strong systems under pressure—and how to navigate messy team dynamics without compromising technical integrity."
 ---
