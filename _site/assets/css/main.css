@@ -1,0 +1,25 @@
+.neon-text {
+    color: #{{ site.data.style.colors.red }};
+    text-shadow:
+        0 0 5px #{{ site.data.style.colors.red }};
+    /* customize how soft/strong the glow is */
+}
+.neon-box {
+    border: 2px solid #0ff;
+    background: black;
+    box-shadow:
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff;
+}
+.glow-blob::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 0, 255, 0.5), transparent 70%);
+    filter: blur(60px);
+    z-index: -1;
+}
