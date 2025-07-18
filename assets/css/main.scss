@@ -3,14 +3,14 @@
   
 @font-face {
   font-family: 'Pixel Game';
-  src: url('/assets/fonts/pixel-game.regular.otf') format('opentype');
+  src: url('{{ site.baseurl }}/assets/fonts/pixel-game.regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Edit Undo BRK';
-  src: url('/assets/fonts/editundo.ttf') format('truetype');
+  src: url('{{ site.baseurl }}/assets/fonts/editundo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
