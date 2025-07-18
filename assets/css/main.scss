@@ -1,6 +1,6 @@
 ---
 ---
-
+  
 @font-face {
   font-family: 'Pixel Game';
   src: url('/assets/fonts/pixel-game.regular.otf') format('opentype');
@@ -15,16 +15,16 @@
   font-style: normal;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=VT323&display=swap');
 
-body{
+body {
   background-color: #{{ site.data.style.bg-color }};
   margin: 0;
   padding: 0;
-  overflow-x: hidden; // Prevent horizontal scrolling
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  scroll-padding-bottom: 0;
 }
-
 
 /* ===== HERO SECTION BASE ===== */
 .hero-section {
@@ -36,7 +36,6 @@ body{
   overflow: hidden;
 }
 
-
 /* ===== LOGO ===== */
 .hero-logo {
   width: clamp(150px, 25vw, 270px);
@@ -44,15 +43,19 @@ body{
   object-fit: cover;
   border-radius: 50%;
   border: 8px solid #{{ site.data.style.colors.purple }};
-  box-shadow: 0 0 25px #{{ site.data.style.colors.purple }}, 0 0 50px #{{ site.data.style.colors.purple }};
+  box-shadow:
+    0 0 25px #{{ site.data.style.colors.purple }},
+    0 0 50px #{{ site.data.style.colors.purple }};
   margin-bottom: 1.5rem;
 }
 
 /* ===== TEXT ===== */
 .hero-title {
   font-family: 'Edit Undo BRK', monospace;
-  font-size: clamp(2.5rem, 7vw, 8rem); // adjusts between 2.5rem and 8rem depending on screen width
-  text-shadow: 0 0 10px #{{ site.data.style.colors.purple }}, 0 0 20px #{{ site.data.style.colors.purple }};
+  font-size: clamp(2.5rem, 7vw, 8rem);
+  text-shadow:
+    0 0 10px #{{ site.data.style.colors.purple }},
+    0 0 20px #{{ site.data.style.colors.purple }};
   margin: 1rem 0;
 }
 
@@ -63,157 +66,150 @@ body{
   text-shadow: 0 0 8px #{{ site.data.style.colors.purple }};
 }
 
-/* ===== GLOW EFFECT OVERLAY ===== */
-#hero-overlay-glow-1 {
-  position: absolute;
-  top: 35%;
-  right: -20%;
-  width: clamp(400px, 60vw, 900px);
-  height: clamp(400px, 60vw, 900px);
-
-  background: radial-gradient(
-    circle,
-    rgba(160, 32, 240, 0.35) 50%,
-    transparent 70%
-  );
-  filter: blur(300px);
-
-  pointer-events: none;
-  z-index: 1;
-  animation: pulseGlow 4s ease-in-out infinite;
-
-  @media (max-width: 768px) {
-    width: 140vw;
-    height: 140vw;
-    top: 0%;
-    right: -30%;
-    filter: blur(100px);
-    background: radial-gradient(
-      circle,
-      rgba(160, 32, 240, 0.2) 40%,
-      transparent 70%
-    );
-  }
-}
-
-#hero-overlay-glow-2 {
-  position: absolute;
-  top: 65%;
-  left: -20%;
-  width: clamp(400px, 60vw, 900px);
-  height: clamp(400px, 60vw, 900px);
-
-  background: radial-gradient(
-    circle,
-    rgba(245, 0, 87, 0.25) 50%,
-    transparent 70%
-  );
-  filter: blur(300px);
-
-  pointer-events: none;
-  z-index: 1;
-  animation: pulseGlow 5s ease-in-out infinite;
-
-  @media (max-width: 768px) {
-    width: 140vw;
-    height: 140vw;
-    top: 40%;
-    left: -40%;
-    filter: blur(100px);
-    background: radial-gradient(
-      circle,
-      rgba(245, 0, 87, 0.15) 40%,
-      transparent 70%
-    );
-  }
-}
-
-@use 'sass:color';
 
 .about-section {
   position: relative;
   background-color: #{{ site.data.style.bg-color }};
   color: #{{ site.data.style.text-color }};
-  padding: 5rem 2rem;
-  overflow: hidden;}
-   .about-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    z-index: 2;
-    position: relative;
-  }
-
-  .about-text {
-    flex: 1;
-    min-width: 300px;
-    padding: 1rem 2rem;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.2rem;
-    line-height: 1.8;
-  }
-
-  .about-heading {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #{{ site.data.style.colors.red }};
-    text-shadow: 0 0 10px #{{ site.data.style.colors.red }};
-    font-family: 'Edit Undo BRK', monospace;
-  }
-
-  .about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-
-    img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 8px solid #{{ site.data.style.colors.red }};
-      box-shadow: 0 0 25px #{{ site.data.style.colors.red }};
-    }
-  }
-
-  .about-overlay-glow {
-    position: absolute;
-    top: 50%;
-    left: -25%;
-    transform: translateY(-50%);
-    width: clamp(400px, 60vw, 900px);
-    height: clamp(400px, 60vw, 900px);
-    background: radial-gradient(
-      circle,
-      rgba(245, 0, 87, 0.25) 40%,
-      transparent 70%
-    );
-    filter: blur(300px);
-    pointer-events: none;
-    z-index: 1;
-    animation: pulseGlow 6s ease-in-out infinite;
-
-    @media (max-width: 768px) {
-      width: 160vw;
-      height: 160vw;
-      left: -60%;
-      top: 30%;
-      filter: blur(120px);
-      background: radial-gradient(
-        circle,
-        rgba(245, 0, 87, 0.15) 40%,
-        transparent 70%
-      );
-    }
-  }
-
-@keyframes pulseGlow {
-  0%   { opacity: 0.7; transform: translate(-50%, -50%) scale(1); }
-  50%  { opacity: 1;   transform: translate(-50%, -50%) scale(1.03); }
-  100% { opacity: 0.7; transform: translate(-50%, -50%) scale(1); }
+  padding: 6rem 2rem 4rem;
+  overflow: hidden;
 }
+
+.about-heading-wrapper {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.about-heading {
+  font-size: 2.7rem;
+  color: #{{ site.data.style.colors.red }};
+  text-shadow: 0 0 10px #{{ site.data.style.colors.red }};
+  font-family: 'Edit Undo BRK', monospace;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.about-text {
+  flex: 1 1 500px;
+  padding: 1rem 2rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.about-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 6px solid #{{ site.data.style.colors.red }};
+  box-shadow: 0 0 30px #{{ site.data.style.colors.red }};
+  object-fit: cover;
+}
+
+
+/* ===== GLOW ANIMATION ===== */
+@keyframes pulseGlow {
+  0% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.03);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* ===== BASE GLOW CLASS (SHARED LOGIC) ===== */
+.glow-base {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(300px);
+  animation: pulseGlow 4s ease-in-out infinite;
+
+  // Prevent layout shifts and overflows
+  will-change: transform, opacity;
+  contain: strict;
+}
+
+/* ===== SPECIFIC GLOWS ===== */
+#hero-overlay-glow-1 {
+  @extend .glow-base;
+  top: 35%;
+  right: -20%;
+  width: clamp(400px, 60vw, 900px);
+  height: clamp(400px, 60vw, 900px);
+  background: radial-gradient(circle, rgba(160, 32, 240, 0.35) 50%, transparent 70%);
+
+  @supports (-moz-appearance: none) {
+    background: radial-gradient(circle, rgba(160, 32, 240, 0.15) 50%, transparent 70%);
+  }
+
+  @media (max-width: 768px) {
+    width: 150vw;
+    height: 150vw;
+    right: -130%;
+    top: 10%;
+    background: radial-gradient(circle, rgba(160, 32, 240, 0.25) 40%, transparent 70%);
+    filter: blur(100px);
+  }
+}
+
+#hero-overlay-glow-2 {
+  @extend .glow-base;
+  top: 60%;
+  left: -25%;
+  width: clamp(400px, 60vw, 900px);
+  height: clamp(400px, 60vw, 900px);
+  background: radial-gradient(circle, rgba(245, 0, 87, 0.25) 50%, transparent 70%);
+
+  @media (max-width: 768px) {
+    width: 180vw;
+    height: 180vw;
+    top: 40%;
+    left: -70%;
+    background: radial-gradient(circle, rgba(245, 0, 87, 0.15) 40%, transparent 80%);
+    filter: blur(90px);
+  }
+}
+
+#about-overlay-glow {
+  @extend .glow-base;
+  top: 120%;
+  left: 100%;
+  width: clamp(400px, 60vw, 900px);
+  height: clamp(400px, 60vw, 900px);
+  background: radial-gradient(circle, rgba(245, 0, 87, 0.25) 50%, transparent 70%);
+
+  @media (max-width: 768px) {
+    width: 180vw;
+    height: 180vw;
+    top: 120%;
+    right: -70%;
+    background: radial-gradient(circle, rgba(245, 0, 87, 0.15) 40%, transparent 80%);
+    filter: blur(90px);
+  }
+}
+
