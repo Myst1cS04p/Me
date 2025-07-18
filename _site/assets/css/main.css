@@ -1,16 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=VT323&display=swap");
+@font-face { font-family: 'Pixel Game'; src: url("/assets/fonts/pixel-game.regular.otf") format("opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Edit Undo BRK'; src: url("/assets/fonts/editundo.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { background-color: #1B1524; margin: 0; padding: 0; overflow-x: hidden; }
+
 /* ===== HERO SECTION BASE ===== */
-.hero-section { position: relative; background-color: #0c0c1e; /* Deep night navy */ color: #ffffff; padding: 3rem 2rem; text-align: center; overflow: hidden; }
+.hero-section { position: relative; background-color: #0c0c1e; color: #ffffff; padding: 6vh 2rem; text-align: center; overflow: hidden; }
 
 /* ===== LOGO ===== */
-.hero-logo { width: 270px; height: 270px; object-fit: cover; border-radius: 50%; border: 8px solid #5D09E4; box-shadow: 0 0 25px #5D09E4, 0 0 50px #5D09E4; margin-bottom: -1.7rem; }
+.hero-logo { width: clamp(150px, 25vw, 270px); height: clamp(150px, 25vw, 270px); object-fit: cover; border-radius: 50%; border: 8px solid #5D09E4; box-shadow: 0 0 25px #5D09E4, 0 0 50px #5D09E4; margin-bottom: 1.5rem; }
 
 /* ===== TEXT ===== */
-.hero-title { font-size: 3rem; /* font-family: 'Press Start 2P', monospace; pixel-style */ text-shadow: 0 0 10px #5D09E4, 0 0 20px #5D09E4; margin-bottom: 1rem; }
+.hero-title { font-family: 'Edit Undo BRK', monospace; font-size: clamp(2.5rem, 7vw, 8rem); text-shadow: 0 0 10px #5D09E4, 0 0 20px #5D09E4; margin: 1rem 0; }
 
-.hero-tagline { font-size: 1.2rem; /* font-family: 'VT323', monospace; */ color: #5D09E4; text-shadow: 0 0 8px #5D09E4; }
+.hero-tagline { font-family: 'Pixel Game', monospace; font-size: clamp(1rem, 3vw, 2rem); color: #5D09E4; text-shadow: 0 0 8px #5D09E4; }
 
 /* ===== GLOW EFFECT OVERLAY ===== */
-.hero-overlay-glow { position: absolute; top: -30%; right: -30%; width: 1000px; height: 1000px; background: radial-gradient(circle, rgba(160, 32, 240, 0.8) 100%, transparent 0%); filter: blur(1000px); pointer-events: none; z-index: 1; }
+#hero-overlay-glow-1 { position: absolute; top: 35%; right: -20%; width: clamp(400px, 60vw, 900px); height: clamp(400px, 60vw, 900px); background: radial-gradient(circle, rgba(160, 32, 240, 0.35) 50%, transparent 70%); filter: blur(300px); pointer-events: none; z-index: 1; animation: pulseGlow 4s ease-in-out infinite; }
+@media (max-width: 768px) { #hero-overlay-glow-1 { width: 140vw; height: 140vw; top: 0%; right: -30%; filter: blur(100px); background: radial-gradient(circle, rgba(160, 32, 240, 0.2) 40%, transparent 70%); } }
 
-/* Ensure glow sits above background but behind content */
-.hero-content { position: relative; z-index: 0; }
+#hero-overlay-glow-2 { position: absolute; top: 65%; left: -20%; width: clamp(400px, 60vw, 900px); height: clamp(400px, 60vw, 900px); background: radial-gradient(circle, rgba(245, 0, 87, 0.25) 50%, transparent 70%); filter: blur(300px); pointer-events: none; z-index: 1; animation: pulseGlow 5s ease-in-out infinite; }
+@media (max-width: 768px) { #hero-overlay-glow-2 { width: 140vw; height: 140vw; top: 40%; left: -40%; filter: blur(100px); background: radial-gradient(circle, rgba(245, 0, 87, 0.15) 40%, transparent 70%); } }
+
+@keyframes pulseGlow { 0% { opacity: 0.7; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.03); }
+  100% { opacity: 0.7; transform: translate(-50%, -50%) scale(1); } }
