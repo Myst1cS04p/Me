@@ -1,25 +1,16 @@
-.neon-text {
-    color: #{{ site.data.style.colors.red }};
-    text-shadow:
-        0 0 5px #{{ site.data.style.colors.red }};
-    /* customize how soft/strong the glow is */
-}
-.neon-box {
-    border: 2px solid #0ff;
-    background: black;
-    box-shadow:
-        0 0 10px #0ff,
-        0 0 20px #0ff,
-        0 0 40px #0ff;
-}
-.glow-blob::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(255, 0, 255, 0.5), transparent 70%);
-    filter: blur(60px);
-    z-index: -1;
-}
+/* ===== HERO SECTION BASE ===== */
+.hero-section { position: relative; background-color: #0c0c1e; /* Deep night navy */ color: #ffffff; padding: 3rem 2rem; text-align: center; overflow: hidden; }
+
+/* ===== LOGO ===== */
+.hero-logo { width: 270px; height: 270px; object-fit: cover; border-radius: 50%; border: 8px solid #5D09E4; box-shadow: 0 0 25px #5D09E4, 0 0 50px #5D09E4; margin-bottom: -1.7rem; }
+
+/* ===== TEXT ===== */
+.hero-title { font-size: 3rem; /* font-family: 'Press Start 2P', monospace; pixel-style */ text-shadow: 0 0 10px #5D09E4, 0 0 20px #5D09E4; margin-bottom: 1rem; }
+
+.hero-tagline { font-size: 1.2rem; /* font-family: 'VT323', monospace; */ color: #5D09E4; text-shadow: 0 0 8px #5D09E4; }
+
+/* ===== GLOW EFFECT OVERLAY ===== */
+.hero-overlay-glow { position: absolute; top: -30%; right: -30%; width: 1000px; height: 1000px; background: radial-gradient(circle, rgba(160, 32, 240, 0.8) 100%, transparent 0%); filter: blur(1000px); pointer-events: none; z-index: 1; }
+
+/* Ensure glow sits above background but behind content */
+.hero-content { position: relative; z-index: 0; }
