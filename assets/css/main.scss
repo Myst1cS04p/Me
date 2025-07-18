@@ -128,7 +128,89 @@ body{
   }
 }
 
+@use 'sass:color';
 
+.about-section {
+  position: relative;
+  background-color: #{{ site.data.style.bg-color }};
+  color: #{{ site.data.style.text-color }};
+  padding: 5rem 2rem;
+  overflow: hidden;}
+   .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    z-index: 2;
+    position: relative;
+  }
+
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem 2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .about-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #{{ site.data.style.colors.red }};
+    text-shadow: 0 0 10px #{{ site.data.style.colors.red }};
+    font-family: 'Edit Undo BRK', monospace;
+  }
+
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 8px solid #{{ site.data.style.colors.red }};
+      box-shadow: 0 0 25px #{{ site.data.style.colors.red }};
+    }
+  }
+
+  .about-overlay-glow {
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    transform: translateY(-50%);
+    width: clamp(400px, 60vw, 900px);
+    height: clamp(400px, 60vw, 900px);
+    background: radial-gradient(
+      circle,
+      rgba(245, 0, 87, 0.25) 40%,
+      transparent 70%
+    );
+    filter: blur(300px);
+    pointer-events: none;
+    z-index: 1;
+    animation: pulseGlow 6s ease-in-out infinite;
+
+    @media (max-width: 768px) {
+      width: 160vw;
+      height: 160vw;
+      left: -60%;
+      top: 30%;
+      filter: blur(120px);
+      background: radial-gradient(
+        circle,
+        rgba(245, 0, 87, 0.15) 40%,
+        transparent 70%
+      );
+    }
+  }
 
 @keyframes pulseGlow {
   0%   { opacity: 0.7; transform: translate(-50%, -50%) scale(1); }

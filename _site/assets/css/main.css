@@ -21,6 +21,21 @@ body { background-color: #1B1524; margin: 0; padding: 0; overflow-x: hidden; }
 #hero-overlay-glow-2 { position: absolute; top: 65%; left: -20%; width: clamp(400px, 60vw, 900px); height: clamp(400px, 60vw, 900px); background: radial-gradient(circle, rgba(245, 0, 87, 0.25) 50%, transparent 70%); filter: blur(300px); pointer-events: none; z-index: 1; animation: pulseGlow 5s ease-in-out infinite; }
 @media (max-width: 768px) { #hero-overlay-glow-2 { width: 140vw; height: 140vw; top: 40%; left: -40%; filter: blur(100px); background: radial-gradient(circle, rgba(245, 0, 87, 0.15) 40%, transparent 70%); } }
 
+@use 'sass:color';
+.about-section { position: relative; background-color: #1B1524; color: #9FA5B2; padding: 5rem 2rem; overflow: hidden; }
+
+.about-content { display: flex; flex-direction: row; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; z-index: 2; position: relative; }
+
+.about-text { flex: 1; min-width: 300px; padding: 1rem 2rem; font-family: 'IBM Plex Mono', monospace; font-size: 1.2rem; line-height: 1.8; }
+
+.about-heading { font-size: 2.5rem; margin-bottom: 1rem; color: #F50057; text-shadow: 0 0 10px #F50057; font-family: 'Edit Undo BRK', monospace; }
+
+.about-image { flex: 1; display: flex; justify-content: center; padding: 2rem; }
+.about-image img { width: 300px; height: 300px; object-fit: cover; border-radius: 50%; border: 8px solid #F50057; box-shadow: 0 0 25px #F50057; }
+
+.about-overlay-glow { position: absolute; top: 50%; left: -25%; transform: translateY(-50%); width: clamp(400px, 60vw, 900px); height: clamp(400px, 60vw, 900px); background: radial-gradient(circle, rgba(245, 0, 87, 0.25) 40%, transparent 70%); filter: blur(300px); pointer-events: none; z-index: 1; animation: pulseGlow 6s ease-in-out infinite; }
+@media (max-width: 768px) { .about-overlay-glow { width: 160vw; height: 160vw; left: -60%; top: 30%; filter: blur(120px); background: radial-gradient(circle, rgba(245, 0, 87, 0.15) 40%, transparent 70%); } }
+
 @keyframes pulseGlow { 0% { opacity: 0.7; transform: translate(-50%, -50%) scale(1); }
   50% { opacity: 1; transform: translate(-50%, -50%) scale(1.03); }
   100% { opacity: 0.7; transform: translate(-50%, -50%) scale(1); } }
