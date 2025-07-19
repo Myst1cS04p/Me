@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Helper to change glow color
     function updateGlow(color) {
         const rgba = hexToRgba(color, 0.25);
-        glow.style.background = `radial-gradient(circle, ${rgba} 50%, transparent 70%)`;
+        glow.style.background = `radial-gradient(circle, ${rgba} 20%, transparent 70%)`;
+        
     }
 
     function hexToRgba(hex, alpha = 1) {
