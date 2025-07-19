@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Pixel Game';
+    src: url("{{ '/assets/fonts/pixel-game.regular.otf' | relative_url }}") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Edit Undo BRK';
+    src: url("{{ '/assets/fonts/editundo.ttf' | relative_url }}") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@...'); // trimmed for brevity

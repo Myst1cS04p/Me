@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> {{ site.title }} </title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
 </head>
 
 <body>
+    <div class="section-wrapper">
     {% include hero.html %}
-    {% include portfolio.html %}
     {% include about.html %}
+    {% include portfolio.html %}
     {% include contact.html %}
+    </div>
 
 </body>
 
