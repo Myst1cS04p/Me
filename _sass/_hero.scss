@@ -1,0 +1,38 @@
+.hero-section {
+  position: relative;
+  background-color: #0c0c1e;
+  color: #ffffff;
+  padding: 6vh 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ===== LOGO ===== */
+.hero-logo {
+  width: clamp(150px, 25vw, 270px);
+  height: clamp(150px, 25vw, 270px);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid var(--color-purple);
+  box-shadow:
+    0 0 25px var(--color-purple),
+    0 0 50px var(--color-purple);
+  margin-bottom: 1.5rem;
+}
+
+/* ===== TEXT ===== */
+.hero-title {
+  font-family: 'Edit Undo BRK', monospace;
+  font-size: clamp(2.5rem, 7vw, 8rem);
+  text-shadow:
+    0 0 10px var(--color-purple),
+    0 0 20px var(--color-purple);
+  margin: 1rem 0;
+}
+
+.hero-tagline {
+  font-family: 'Pixel Game', monospace;
+  font-size: clamp(1rem, 3vw, 2rem);
+  color: var(--color-purple);
+  text-shadow: 0 0 8px var(--color-purple);
+}

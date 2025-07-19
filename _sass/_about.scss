@@ -1,0 +1,55 @@
+.about-section {
+  position: relative;
+  color: var(--text-color);
+  padding: 6rem 2rem 4rem;
+  overflow: hidden;
+}
+
+.about-heading-wrapper {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.about-heading {
+  font-size: 2.7rem;
+  color: var(--color-red);
+  text-shadow: 0 0 10px var(--color-red);
+  font-family: 'Edit Undo BRK', monospace;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.about-text {
+  flex: 1 1 500px;
+  padding: 1rem 2rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.about-image img {
+  width: clamp(200px, 25vw, 270px);
+  height: clamp(200px, 25vw, 270px);
+  border-radius: 50%;
+  border: 6px solid var(--color-red);
+  box-shadow: 0 0 30px var(--color-red);
+  object-fit: cover;
+}

@@ -1,0 +1,140 @@
+.section-wrapper {
+    position: relative;
+    overflow: hidden;
+    /* important! clip glows here */
+}
+
+.glow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 2;
+    /* or higher if needed */
+}
+
+/* ===== GLOW ANIMATION ===== */
+@keyframes pulseGlow {
+    0% {
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.03);
+    }
+
+    100% {
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* ===== BASE GLOW CLASS (SHARED LOGIC) ===== */
+.glow-base {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    filter: blur(300px);
+    animation: pulseGlow 4s ease-in-out infinite;
+
+    // Prevent layout shifts and overflows
+    will-change: transform, opacity;
+    contain: strict;
+}
+
+/* ===== SPECIFIC GLOWS ===== */
+#hero-overlay-glow-1 {
+    @extend .glow-base;
+    top: 35%;
+    right: -20%;
+    width: clamp(400px, 60vw, 900px);
+    height: clamp(400px, 60vw, 900px);
+    background: radial-gradient(circle, var(--glow-purple) 50%, transparent 70%);
+
+    @supports (-moz-appearance: none) {
+        background: radial-gradient(circle, var(--glow-purple-low) 50%, transparent 70%);
+    }
+
+    @media (max-width: 768px) {
+        width: 150vw;
+        height: 150vw;
+        right: -130%;
+        top: 5%;
+        background: radial-gradient(circle, var(--glow-purple-mid) 40%, transparent 70%);
+        filter: blur(100px);
+    }
+}
+
+#hero-overlay-glow-2 {
+    @extend .glow-base;
+    top: 30%;
+    left: -100%;
+    width: clamp(400px, 60vw, 900px);
+    height: clamp(400px, 60vw, 900px);
+    background: radial-gradient(circle, var(--glow-red) 50%, transparent 70%);
+
+    @media (max-width: 768px) {
+        width: 180vw;
+        height: 180vw;
+        top: 35%;
+        left: -30%;
+        background: radial-gradient(circle, var(--glow-red-low) 40%, transparent 80%);
+        filter: blur(90px);
+    }
+}
+
+#about-overlay-glow {
+    @extend .glow-base;
+    top: 50%;
+    left: 90%;
+    width: clamp(400px, 60vw, 900px);
+    height: clamp(400px, 60vw, 900px);
+    background: radial-gradient(circle, var(--glow-red) 50%, transparent 70%);
+
+    @media (max-width: 768px) {
+        width: 180vw;
+        height: 180vw;
+        top: 20%;
+        right: -70%;
+        background: radial-gradient(circle, var(--glow-red-low) 40%, transparent 80%);
+        filter: blur(90px);
+    }
+}
+
+#portfolio-overlay-glow {
+    @extend .glow-base;
+    top: 65%;
+    left: 40%;
+    width: clamp(400px, 60vw, 900px);
+    height: clamp(400px, 60vw, 900px);
+    background: radial-gradient(circle, var(--glow-blue-low) 1000%, transparent 70%);
+
+    @media (max-width: 768px) {
+        top: 60%;
+        width: 160vw;
+        height: 500vw;
+        filter: blur(75px);
+        background: radial-gradient(ellipse, var(--glow-blue-low) 20%, transparent 70%);
+    }
+}
+#contact-overlay-glow {
+    @extend .glow-base;
+    top: 95%;
+    left: 75%;
+    width: clamp(400px, 60vw, 900px);
+    height: clamp(400px, 60vw, 900px);
+    background: radial-gradient(circle, var(--color-yellow) 40%, transparent 5%);
+
+    @media (max-width: 768px) {
+        top: 90%;
+        left: 50%;
+        width: 75vw;
+        height: 75vw;
+        filter: blur(150px);
+        background: radial-gradient(ellipse, var(--color-yellow) 10%, transparent 50%);
+    }
+}

@@ -1,0 +1,40 @@
+
+<div class="glow-containter">
+<div id="portfolio-overlay-glow"></div>
+</div>
+
+<section id="portfolio-section">
+    <div class="portfolio-heading-wrapper">
+        <h2 class="portfolio-heading">Portfolio</h2>
+    </div>
+
+    <div class="portfolio-grid">
+        {% for project in site.projects %}
+        <div class="portfolio-card" style="--hover-color: {{ project.color | default: '#ffffff' }};"
+            data-name="{{ project.name }}" data-date="{{ project.date | date: " %B %d, %Y" }}"
+            data-description="{{ project.description }}" data-cta="{{ project.cta }}" data-link="{{ project.link }}">
+            <div class="portfolio-card-image">
+                <img src="{{ project.image | relative_url }}" alt="{{ project.name }} thumbnail">
+            </div>
+            <div class="portfolio-card-hover">
+                <h3>{{ project.name }}</h3>
+                <p class="portfolio-date">{{ project.date | date: "%Y" }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</section>
+
+<script src="{{'js/modal.js' | relative_url}}"></script>
+<div id="project-modal-overlay" class="modal-overlay hidden">
+    <div id="project-modal" class="modal">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-content">
+            <h2 class="modal-title"></h2>
+            <p class="modal-date"></p>
+            <p class="modal-description"></p>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="modal-cta"></a>
+        </div>
+    </div>
+</div>

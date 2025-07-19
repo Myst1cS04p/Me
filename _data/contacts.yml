@@ -1,0 +1,31 @@
+---
+
+- name: Discord
+  url: https://discordapp.com/users/1211164501614010381
+  img: discord.png
+  alt: Discord
+
+- name: GitHub
+  url: https://github.com/myst1cs04p-real
+  img: github.png
+  alt: GitHub
+
+- name: Itch.io
+  url: https://myst1cs04p.itch.io
+  img: itch.png
+  alt: Itch.io
+
+- name: Gmail
+  url: mailto:myst1cs04p@email.com
+  img: gmail.png
+  alt: Gmail
+
+# - name: Phone
+#   url: tel:+123123123
+#   img: phone.png
+#   alt: Phone
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/myst1cs04p/
+  img: linkedin.png
+  alt: LinkedIn
