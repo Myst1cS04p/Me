@@ -1,0 +1,89 @@
+.contact-section {
+    position: relative;
+    color: var(--text-color);
+    padding: 6rem 2rem 4rem;
+    overflow: hidden;
+}
+
+.contact-heading-wrapper {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-heading {
+    font-size: 2.7rem;
+    color: var(--color-yellow);
+    text-shadow: 0 0 10px var(--color-yellow);
+    font-family: 'Edit Undo BRK', monospace;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    gap: 2rem;
+}
+
+.contact-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 700px;
+    padding: 0 1.5rem;
+}
+
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+
+    a {
+        display: inline-block;
+        transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+        img {
+            width: 50px;
+            height: 50px;
+            filter: drop-shadow(0 0 8px var(--color-yellow));
+            transition: filter 0.3s ease;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+
+            img {
+                filter: drop-shadow(0 0 14px var(--color-yellow));
+            }
+        }
+    }
+}
+
+.contact-resume {
+    margin-top: 1rem;
+
+    .resume-btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        font-family: 'Edit Undo BRK', monospace;
+        font-size: 1.1rem;
+        background-color: var(--color-yellow);
+        color: var(--bg-color);
+        border-radius: 6px;
+        text-decoration: none;
+        box-shadow: 0 0 15px var(--color-yellow);
+        transition: all 0.25s ease;
+
+        &:hover {
+            background-color: lighten(#FFEA00, 10%);
+            box-shadow: 0 0 25px var(--color-yellow);
+        }
+    }
+}
