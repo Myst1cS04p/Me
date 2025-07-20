@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@...");
-:root { --color-red: #F50057; --color-red-orange: #FF3D00; --color-orange: #FF6F00; --color-yellow: #FFEA00; --color-green: #00E676; --color-blue: #00CFFF; --color-pink: #FF77B9; --color-black: #1A1A2E; --color-purple: #5D09E4; --bg-color: #1B1524; --second-bg-color: #281F34; --text-color: #9FA5B2; --glow-purple: rgba(160, 32, 240, 0.35); --glow-purple-low: rgba(160, 32, 240, 0.15); --glow-purple-mid: rgba(160, 32, 240, 0.25); --glow-red: rgba(245, 0, 87, 0.25); --glow-red-low: rgba(245, 0, 87, 0.15); --glow-blue-low: rgba(0, 207, 255, 0.15); }
+:root { --color-red: #F50057; --color-red-orange: #FF3D00; --color-orange: #FF6F00; --color-yellow: #FFEA00; --color-green: #00E676; --color-blue: #00CFFF; --color-pink: #FF77B9; --color-black: #1A1A2E; --color-purple: #5D09E4; --bright-yellow: #FFFFC2; --bright-red: #FFD6E3; --bright-blue: #C9F6FF; --bg-color: #1B1524; --second-bg-color: #281F34; --text-color: #9FA5B2; --glow-purple: rgba(160, 32, 240, 0.35); --glow-purple-low: rgba(160, 32, 240, 0.15); --glow-purple-mid: rgba(160, 32, 240, 0.25); --glow-red: rgba(245, 0, 87, 0.25); --glow-red-low: rgba(245, 0, 87, 0.15); --glow-blue-low: rgba(0, 207, 255, 0.15); }
 
 @font-face { font-family: 'Pixel Game'; src: url("{{ '/assets/fonts/pixel-game.regular.otf' | relative_url }}") format("opentype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Edit Undo BRK'; src: url("{{ '/assets/fonts/editundo.ttf' | relative_url }}") format("truetype"); font-weight: normal; font-style: normal; }
@@ -47,7 +47,7 @@ body { background-color: var(--bg-color); margin: 0; padding: 0; overflow-x: hid
 
 .about-heading-wrapper { text-align: center; margin-bottom: 3rem; position: relative; z-index: 2; }
 
-.about-heading { font-size: 2.7rem; color: var(--color-red); text-shadow: 0 0 10px var(--color-red); font-family: 'Edit Undo BRK', monospace; }
+.about-heading { font-size: 2.7rem; color: var(--bright-red); text-shadow: 0 0 10px var(--color-red); font-family: 'Edit Undo BRK', monospace; }
 
 .about-content { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; max-width: 1100px; margin: 0 auto; z-index: 2; position: relative; }
 
@@ -62,7 +62,7 @@ body { background-color: var(--bg-color); margin: 0; padding: 0; overflow-x: hid
 
 .portfolio-heading-wrapper { text-align: center; margin-bottom: 3rem; position: relative; z-index: 0; }
 
-.portfolio-heading { font-size: 2.7rem; color: var(--color-blue); text-shadow: 0 0 10px var(--color-blue); font-family: 'Edit Undo BRK', monospace; }
+.portfolio-heading { font-size: 2.7rem; color: var(--bright-blue); text-shadow: 0 0 10px var(--color-blue); font-family: 'Edit Undo BRK', monospace; }
 
 .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; z-index: 2; position: relative; }
 
@@ -108,7 +108,7 @@ body { background-color: var(--bg-color); margin: 0; padding: 0; overflow-x: hid
 
 .contact-heading-wrapper { text-align: center; margin-bottom: 3rem; position: relative; z-index: 2; }
 
-.contact-heading { font-size: 2.7rem; color: var(--color-yellow); text-shadow: 0 0 10px var(--color-yellow); font-family: 'Edit Undo BRK', monospace; }
+.contact-heading { font-size: 2.7rem; color: var(--bright-yellow); text-shadow: 0 0 10px var(--color-yellow); font-family: 'Edit Undo BRK', monospace; }
 
 .contact-content { display: flex; flex-direction: column; align-items: center; max-width: 900px; margin: 0 auto; position: relative; z-index: 2; gap: 2rem; }
 

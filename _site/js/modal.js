@@ -24,17 +24,27 @@ document.addEventListener('DOMContentLoaded', function () {
         return `rgba(${r}, ${g}, ${b}, ${alpha})`;
     }
 
+    function brightenColor(hex, amount = 0.7) {
+        const r = parseInt(hex.slice(1, 3), 16);
+        const g = parseInt(hex.slice(3, 5), 16);
+        const b = parseInt(hex.slice(5, 7), 16);
 
+        const brighten = (c) => Math.round(c + (255 - c) * amount);
 
+        return `rgb(${brighten(r)}, ${brighten(g)}, ${brighten(b)})`;
+    }
+    
     cards.forEach(card => {
         const color = getComputedStyle(card).getPropertyValue('--hover-color').trim();
+        const brightTextColor = brightenColor(color);
+        const brightModalColor = brightenColor(color);
 
         // Hover: Update section glow color
         card.addEventListener('mouseenter', () => {
             updateGlow(color);
 
-            heading.style.color = color;
-            heading.style.textShadow = `0 0 10px ${color}`;
+            heading.style.color = brightTextColor;
+            heading.style.textShadow = `0 0 10px ${color}`; // soft actual glow
         });
 
 
@@ -49,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
             // Dynamic modal styling
             modal.style.borderColor = color;
             modal.style.boxShadow = `0 0 25px ${color}, 0 0 60px ${color}`;
-            title.style.color = color;
+            title.style.color = brightModalColor;
             title.style.textShadow = `0 0 10px ${color}`;
-            closeBtn.style.color = color;
+            closeBtn.style.color = brightModalColor;
             closeBtn.style.textShadow = `0 0 10px ${color}`;
             cta.style.backgroundColor = color;
             cta.style.boxShadow = `0 0 15px ${color}, 0 0 30px ${color}`;
