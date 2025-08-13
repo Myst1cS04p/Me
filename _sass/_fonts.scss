@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Pixel Game';
-    src: url("{{ '/assets/fonts/pixel-game.regular.otf' | relative_url }}") format('opentype');
+    src: '{{ "/assets/fonts/pixel-game.regular.otf" | relative_url }}' format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Edit Undo BRK';
-    src: url("{{ '/assets/fonts/editundo.ttf' | relative_url }}") format('truetype');
+    src: '{{ "/assets/fonts/editundo.ttf" | relative_url }}' format('truetype');
     font-weight: normal;
     font-style: normal;
 }

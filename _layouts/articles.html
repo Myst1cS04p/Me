@@ -2,14 +2,22 @@
 layout: base
 ---
 
+
+<div class="articles-heading-wrapper">
+    <h2 class="articles-heading"> Posts </h2>
+</div>
 <section class="articles-grid">
+
+
     {% for article in site.articles %}
-    <a class="article-card" href="{{ article.url | relative_url }}" style="--article-color: {{ article.color }}">
-        <div class="article-cover" style="background-image: url('{{ article.cover | relative_url }}');"></div>
-        <div class="article-info">
-            <h2>{{ article.title }}</h2>
-            <time datetime="{{ article.date }}">{{ article.date | date: "%B %d, %Y" }}</time>
+    <div class="article-card" style="--hover-color: {{ article.color | default: '#ffffff' }}">
+        <a href="{{ article.url | relative_url }}" class="article-card-image">
+            <img src="{{ article.cover | relative_url }}" alt="{{ article.title }}">
+        </a>
+        <div class="article-meta">
+            <a href="{{ article.url | relative_url }}" class="article-title">{{ article.title }}</a>
+            <p class="article-date">{{ article.date | date: "%B %d, %Y" }}</p>
         </div>
-    </a>
+    </div>
     {% endfor %}
 </section>

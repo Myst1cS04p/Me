@@ -1,6 +1,6 @@
-/* ===== PORTFOLIO SECTION ===== */
+/* ===== ARTICLES SECTION ===== */
 
-#portfolio-section {
+#articles-section {
   position: relative;
   background-color: #0c0c1e;
   padding: 6rem 2rem 4rem;
@@ -8,107 +8,92 @@
   z-index: 0;
 }
 
-.portfolio-heading-wrapper {
+.articles-heading-wrapper {
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
   z-index: 0;
 }
 
-.portfolio-heading {
+.articles-heading {
   font-size: 2.7rem;
-  color: var(--bright-blue);
-  text-shadow: 0 0 10px var(--color-blue);
+  color: var(--bright-yellow);
+  text-shadow: 0 0 10px var(--color-yellow);
   font-family: 'Edit Undo BRK', monospace;
 }
 
-.portfolio-grid {
+.articles-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  z-index: 2;
-  position: relative;
+  justify-items: center;
 }
 
-/* ===== CARD STYLING ===== */
 
-.portfolio-card {
-  position: relative;
-  overflow: hidden;
-  border: 10px solid transparent;
-  border-radius: 70px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+/* ===== CARD SECTION ===== */
+
+.article-card {
+
+  aspect-ratio: 1 / 1; /* keeps square shape */
+  width: 20rem; /* optional fixed width */
+  max-width: 100%;
+
   background-color: #111;
-  aspect-ratio: 1 / 0.8;
-}
-
-.portfolio-card:hover {
-  border-color: var(--hover-color);
-  box-shadow: 0 0 25px var(--hover-color),
-    0 0 60px var(--hover-color);
-}
-
-.portfolio-card-image {
-  width: 100%;
-  height: 100%;
+  border-radius: 20px;
   overflow: hidden;
+  border: 6px solid transparent;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.portfolio-card-image img {
+.article-card:hover {
+  border-color: var(--hover-color);
+  box-shadow: 0 0 25px var(--hover-color), 0 0 60px var(--hover-color);
+}
+
+.article-card-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 14px;
+  /* slightly smaller than card to fit inside border */
+}
+
+.article-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
 
-.portfolio-card:hover .portfolio-card-image img {
-  transform: scale(1.1);
+.article-card:hover .article-card-image img {
+  transform: scale(1.05);
 }
 
-.portfolio-card-hover {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem;
-  background: linear-gradient(to top, rgba(12, 12, 30, 0.8));
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+.article-meta {
+  padding: 0.8rem 0.5rem;
+  text-align: left;
 }
 
-.portfolio-card:hover .portfolio-card-hover {
-  opacity: 1;
-}
-
-.portfolio-card-hover h3 {
-  font-family: 'Edit Undo BRK', monospace;
-  font-size: 1.3rem;
-  margin: 0;
-}
-
-.portfolio-date {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.9rem;
-  color: #bbb;
-}
-
-.modal-devlog {
+.article-title {
   display: inline-block;
-  margin-left: 1rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 12px;
-  background-color: transparent;
   font-family: 'Edit Undo BRK', monospace;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: var(--hover-color); // dynamic color from front matter
+  text-shadow: 0 0 8px var(--hover-color);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.modal-devlog.hidden {
-  display: none;
+.article-title:hover {
+  text-shadow: 0 0 12px var(--hover-color);
+}
+
+.article-date {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  margin: 0.3rem 0 0 0;
 }
