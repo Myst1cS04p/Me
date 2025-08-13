@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeBtn = modal.querySelector('.modal-close');
     const glow = document.getElementById('portfolio-overlay-glow');
     const heading = document.querySelector('.portfolio-heading');
+    const devlogBtn = modal.querySelector('.modal-devlog');
 
     // Helper to change glow color
     function updateGlow(color) {
@@ -42,19 +43,28 @@ document.addEventListener('DOMContentLoaded', function () {
         // Hover: Update section glow color
         card.addEventListener('mouseenter', () => {
             updateGlow(color);
-
+            
             heading.style.color = brightTextColor;
             heading.style.textShadow = `0 0 10px ${color}`; // soft actual glow
         });
-
-
+        
+        
         // Click: Open modal and populate data
         card.addEventListener('click', () => {
+            const devlog = card.dataset.devlog;
             title.textContent = card.dataset.name;
             date.textContent = card.dataset.date;
             desc.textContent = card.dataset.description;
             cta.textContent = card.dataset.cta;
             cta.href = card.dataset.link;
+
+            if (devlog) {
+                devlogBtn.href = devlog;
+                devlogBtn.classList.remove('hidden');
+            } else {
+                console.log(devlog);
+                devlogBtn.classList.add('hidden');
+            }
 
             // Dynamic modal styling
             modal.style.borderColor = color;
@@ -65,6 +75,10 @@ document.addEventListener('DOMContentLoaded', function () {
             closeBtn.style.textShadow = `0 0 10px ${color}`;
             cta.style.backgroundColor = color;
             cta.style.boxShadow = `0 0 15px ${color}, 0 0 30px ${color}`;
+            cta.style.color = brightModalColor;
+            devlogBtn.style.backgroundColor = color;
+            devlogBtn.style.boxShadow = `0 0 15px ${color}, 0 0 30px ${color}`;
+            devlogBtn.style.color = brightModalColor;
 
             modalOverlay.classList.remove('hidden');
         });

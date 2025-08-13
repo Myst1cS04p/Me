@@ -6,4 +6,5 @@ image: /assets/img/project_icons/ChefsCircuit.jpg
 cta: Play
 color: "#DBA459"
 link: https://myst1cs04p.itch.io/chefs-circuit
+devlog: /devlog/chefs-circuit
 ---

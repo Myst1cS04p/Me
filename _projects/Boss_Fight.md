@@ -6,4 +6,5 @@ image: /assets/img/project_icons/BossFight.png
 cta: Play
 color: "#E01BFF"
 link: https://shotgunflamez.itch.io/boss-fight
+devlog: /devlog/boss-fight
 ---

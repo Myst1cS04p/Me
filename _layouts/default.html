@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: base
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> {{ site.title }} </title>
-    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
-    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
 
-</head>
-
-<body>
-    <div class="section-wrapper">
-    {% include hero.html %}
-    {% include about.html %}
-    {% include portfolio.html %}
-    {% include contact.html %}
-    </div>
-
-</body>
-
-</html>
+<div class="section-wrapper">
+{% include hero.html %}
+{% include about.html %}
+{% include portfolio.html %}
+{% include contact.html %}
+</div>

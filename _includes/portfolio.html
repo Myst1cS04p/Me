@@ -12,7 +12,7 @@
         {% for project in site.projects %}
         <div class="portfolio-card" style="--hover-color: {{ project.color | default: '#ffffff' }};"
             data-name="{{ project.name }}" data-date="{{ project.date | date: " %B %d, %Y" }}"
-            data-description="{{ project.description }}" data-cta="{{ project.cta }}" data-link="{{ project.link }}">
+            data-description="{{ project.description }}" data-cta="{{ project.cta }}" data-link="{{ project.link }}" data-devlog="{{ project.devlog }}">
             <div class="portfolio-card-image">
                 <img src="{{ project.image | relative_url }}" alt="{{ project.name }} thumbnail">
             </div>
@@ -35,6 +35,7 @@
             <p class="modal-date"></p>
             <p class="modal-description"></p>
             <a href="#" target="_blank" rel="noopener noreferrer" class="modal-cta"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="modal-devlog hidden">View Devlog</a>
         </div>
     </div>
 </div>

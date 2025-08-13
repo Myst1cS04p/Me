@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ page.title }} </title>
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+
+    {% if page.css %}
+        <link rel="stylesheet" href="{{ page.css | relative_url }}">
+    {% endif %}
+
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+</head>
+
+<body>
+    {% include header.html %}
+    <main>{{content}}</main>
+    {% include footer.html %}
+</body>
+
+</html>

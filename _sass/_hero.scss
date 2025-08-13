@@ -36,3 +36,12 @@
   color: var(--color-purple);
   text-shadow: 0 0 8px var(--color-purple);
 }
+
+.warning {
+    font-family: 'Edit Undo BRK', monospace;
+      font-size: clamp(1rem, 3vw, 2rem);
+      text-shadow:
+        0 0 10px var(--color-red),
+        0 0 20px var(--color-red);
+      margin: 1rem 0;
+}

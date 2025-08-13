@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+<section class="articles-grid">
+    {% for article in site.articles %}
+    <a class="article-card" href="{{ article.url | relative_url }}" style="--article-color: {{ article.color }}">
+        <div class="article-cover" style="background-image: url('{{ article.cover | relative_url }}');"></div>
+        <div class="article-info">
+            <h2>{{ article.title }}</h2>
+            <time datetime="{{ article.date }}">{{ article.date | date: "%B %d, %Y" }}</time>
+        </div>
+    </a>
+    {% endfor %}
+</section>

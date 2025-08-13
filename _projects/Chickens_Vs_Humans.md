@@ -6,4 +6,5 @@ image: /assets/img/project_icons/ChickensVsHumans.png
 cta: Play
 color: "#75FF53"
 link: https://myst1cs04p.itch.io/chickens-vs-humans
+devlog: /devlog/chickens-vs-humans
 ---

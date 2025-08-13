@@ -24,7 +24,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1700px;
   margin: 0 auto;
   z-index: 2;
   position: relative;
@@ -46,8 +46,8 @@
 }
 
 .about-image img {
-  width: clamp(200px, 25vw, 270px);
-  height: clamp(200px, 25vw, 270px);
+  width: clamp(400px, 25vw, 270px);
+  height: clamp(400px, 25vw, 270px);
   border-radius: 50%;
   border: 6px solid var(--color-red);
   box-shadow: 0 0 30px var(--color-red);
