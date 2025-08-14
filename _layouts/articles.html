@@ -2,13 +2,19 @@
 layout: base
 ---
 
+<div id="articles-section">
+
+<div class="glow-containter">
+    <div id="articles-overlay-glow"></div>
+    <div id="articles-overlay-glow1"></div>
+</div>
+
 
 <div class="articles-heading-wrapper">
     <h2 class="articles-heading"> Posts </h2>
 </div>
+
 <section class="articles-grid">
-
-
     {% for article in site.articles %}
     <div class="article-card" style="--hover-color: {{ article.color | default: '#ffffff' }}">
         <a href="{{ article.url | relative_url }}" class="article-card-image">
@@ -21,3 +27,5 @@ layout: base
     </div>
     {% endfor %}
 </section>
+
+</div>

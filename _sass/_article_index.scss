@@ -2,7 +2,7 @@
 
 #articles-section {
   position: relative;
-  background-color: #0c0c1e;
+  background-image: radial-gradient(ellipse at center, --bg-color 0%, --second-bg-color 100%);
   padding: 6rem 2rem 4rem;
   overflow: hidden;
   z-index: 0;
@@ -36,8 +36,8 @@
 
 .article-card {
 
-  aspect-ratio: 1 / 1; /* keeps square shape */
-  width: 20rem; /* optional fixed width */
+  aspect-ratio: 1 / 1;
+  width: 20rem; 
   max-width: 100%;
 
   background-color: #111;
@@ -58,7 +58,6 @@
   height: 200px;
   overflow: hidden;
   border-radius: 14px;
-  /* slightly smaller than card to fit inside border */
 }
 
 .article-card-image img {
@@ -81,7 +80,7 @@
   display: inline-block;
   font-family: 'Edit Undo BRK', monospace;
   font-size: 1.2rem;
-  color: var(--hover-color); // dynamic color from front matter
+  color: var(--hover-color);
   text-shadow: 0 0 8px var(--hover-color);
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
