@@ -52,4 +52,9 @@
   border: 6px solid var(--color-red);
   box-shadow: 0 0 30px var(--color-red);
   object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: clamp(300px, 25vw, 270px);
+    height: clamp(300px, 25vw, 270px);
+  }
 }

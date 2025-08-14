@@ -64,6 +64,7 @@ body { background-color: var(--bg-color); margin: 0; padding: 0; overflow-x: hid
 .about-image { flex: 1 1 300px; display: flex; justify-content: center; padding: 2rem; }
 
 .about-image img { width: clamp(400px, 25vw, 270px); height: clamp(400px, 25vw, 270px); border-radius: 50%; border: 6px solid var(--color-red); box-shadow: 0 0 30px var(--color-red); object-fit: cover; }
+@media (max-width: 768px) { .about-image img { width: clamp(300px, 25vw, 270px); height: clamp(300px, 25vw, 270px); } }
 
 /* ===== PORTFOLIO SECTION ===== */
 #portfolio-section { position: relative; background-color: #0c0c1e; padding: 6rem 2rem 4rem; overflow: hidden; z-index: 0; }
