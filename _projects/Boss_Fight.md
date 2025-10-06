@@ -1,10 +1,9 @@
 ---
 name: Boss Fight
-date: 13th August 2024
-description: Chef’s Circuit is a side-scrolling platformer where players launch food characters through chaotic obstacle courses in a race to land in a boiling pot. The core mechanic is a slingshot movement system, enhanced by elements like bouncing mushrooms, knife-gate hazards, protective boost bubbles, and dynamic moving platforms.
+date: 10th May 2021
+description: BOSS FIGHT! was my debut game project, created for the Dev Pad Game Jam. It was a major milestone, marking my first game, first team collaboration, and first time sharing a project with others. The game is a fast-paced action experience set in a continuous boss battle arena, where players need to master timing, pattern recognition, and strategy to survive. The concept was inspired by the jam’s theme, emphasizing the intensity and learning curve typical of boss fights.
 image: /assets/img/project_icons/BossFight.png
 cta: Play
 color: "#E01BFF"
 link: https://shotgunflamez.itch.io/boss-fight
-devlog: /devlog/boss-fight
 ---

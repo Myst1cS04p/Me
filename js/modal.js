@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateGlow(color) {
         const rgba = hexToRgba(color, 0.25);
         glow.style.background = `radial-gradient(circle, ${rgba} 20%, transparent 70%)`;
-        
+
     }
 
     function hexToRgba(hex, alpha = 1) {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         return `rgb(${brighten(r)}, ${brighten(g)}, ${brighten(b)})`;
     }
-    
+
     cards.forEach(card => {
         const color = getComputedStyle(card).getPropertyValue('--hover-color').trim();
         const brightTextColor = brightenColor(color);
@@ -43,20 +43,28 @@ document.addEventListener('DOMContentLoaded', function () {
         // Hover: Update section glow color
         card.addEventListener('mouseenter', () => {
             updateGlow(color);
-            
+
             heading.style.color = brightTextColor;
             heading.style.textShadow = `0 0 10px ${color}`; // soft actual glow
         });
-        
-        
+
+
         // Click: Open modal and populate data
         card.addEventListener('click', () => {
             const devlog = card.dataset.devlog;
             title.textContent = card.dataset.name;
             date.textContent = card.dataset.date;
             desc.textContent = card.dataset.description;
-            cta.textContent = card.dataset.cta;
-            cta.href = card.dataset.link;
+            if (card.dataset.cta && card.dataset.link) {
+                cta.textContent = card.dataset.cta;
+                cta.href = card.dataset.link;
+                cta.style.display = 'inline-block';
+                console.log("shown button");
+            }
+            else{
+                cta.style.display = 'none';
+                console.log("hidden button");
+            }
 
             if (devlog) {
                 devlogBtn.href = devlog;
@@ -76,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
             cta.style.backgroundColor = color;
             cta.style.boxShadow = `0 0 15px ${color}, 0 0 30px ${color}`;
             cta.style.color = brightModalColor;
+
+
             devlogBtn.style.backgroundColor = color;
             devlogBtn.style.boxShadow = `0 0 15px ${color}, 0 0 30px ${color}`;
             devlogBtn.style.color = brightModalColor;

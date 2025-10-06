@@ -1,7 +1,7 @@
 ---
 name: Crate Smasher
 date: 18th March 2024
-description: Chef’s Circuit is a side-scrolling platformer where players launch food characters through chaotic obstacle courses in a race to land in a boiling pot. The core mechanic is a slingshot movement system, enhanced by elements like bouncing mushrooms, knife-gate hazards, protective boost bubbles, and dynamic moving platforms.
+description: Crate Smasher started as a simple tap game assignment from the Unity Junior Developer course, but I saw it as an opportunity to push beyond the basics. I reimagined and expanded it into a complete arcade experience, adding a dynamic spawn system that scales with screen resolution, randomized crate behaviors (including bombs and mystery crates), responsive visual and audio feedback, and a full suite of UI features; from difficulty modes to an FPS counter and settings menu. Through this process, I learned how to extend prefab projects into something custom and meaningful, design scalable systems, and balance gameplay for both challenge and accessibility. While it may not be my most ambitious game, Crate Smasher reflects my ability to take a foundation and thoughtfully evolve it into something polished, engaging, and complete.
 image: /assets/img/project_icons/CrateSmasher.png
 cta: Play
 color: "#A0CDF2"
