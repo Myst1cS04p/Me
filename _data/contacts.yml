@@ -20,11 +20,6 @@
   img: gmail.png
   alt: Gmail
 
-# - name: Phone
-#   url: tel:+123123123
-#   img: phone.png
-#   alt: Phone
-
 - name: LinkedIn
   url: https://www.linkedin.com/in/myst1cs04p/
   img: linkedin.png
