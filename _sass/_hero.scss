@@ -9,8 +9,8 @@
 
 /* ===== LOGO ===== */
 .hero-logo {
-  width: clamp(150px, 25vw, 270px);
-  height: clamp(150px, 25vw, 270px);
+  width: 25vw;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
   border: 8px solid var(--color-purple);
@@ -18,12 +18,16 @@
     0 0 25px var(--color-purple),
     0 0 50px var(--color-purple);
   margin-bottom: 1.5rem;
+
+  @media (max-width:768px) {
+    width: 50vw;
+  }
 }
 
 /* ===== TEXT ===== */
 .hero-title {
   font-family: 'Edit Undo BRK', monospace;
-  font-size: clamp(2.5rem, 7vw, 8rem);
+  font-size: 2.7rem;
   text-shadow:
     0 0 10px var(--color-purple),
     0 0 20px var(--color-purple);

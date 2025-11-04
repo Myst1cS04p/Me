@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<article class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+        <p class="meta">Posted on {{ page.date | date: "%B %d, %Y" }}</p>
+    </header>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <footer>
+        <p>Tags:
+            {% for tag in page.tags %}
+            <a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
+            {% endfor %}
+        </p>
+    </footer>
+</article>

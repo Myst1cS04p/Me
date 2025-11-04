@@ -13,4 +13,4 @@ collections:
     permalink: /projects/:name
   articles:
     output: true
-    permalink: /posts/:name
+    permalink: /blogs/:name

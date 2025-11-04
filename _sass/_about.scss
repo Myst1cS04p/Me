@@ -36,6 +36,12 @@
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.1rem;
   line-height: 1.8;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+
 }
 
 .about-image {

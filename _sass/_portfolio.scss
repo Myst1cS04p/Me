@@ -6,6 +6,10 @@
   padding: 6rem 2rem 4rem;
   overflow: hidden;
   z-index: 0;
+
+  @media (max-width: 768px) {
+      padding: 6rem 4rem 4rem;
+    }
 }
 
 .portfolio-heading-wrapper {
