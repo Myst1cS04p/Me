@@ -7,13 +7,13 @@
     <div class="portfolio-heading-wrapper">
         <h2 class="portfolio-heading">Portfolio</h2>
     </div>
-\7
+
     <div class="portfolio-grid">
         {% for project in site.projects %}
         <div class="portfolio-card" style="--hover-color: {{ project.color | default: '#ffffff' }};"
             data-name="{{ project.name }}" data-date="{{ project.date | date: " %B %d, %Y" }}"
             data-description="{{ project.description }}" data-cta="{{ project.cta }}" data-link="{{ project.link }}" data-devlog="{{ project.devlog }}">
-            
+
             <div class="portfolio-card-image">
                 <img src="{{ project.image | relative_url }}" alt="{{ project.name }} thumbnail">
             </div>
