@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
         card.addEventListener('click', () => {
             const devlog = card.dataset.devlog;
             title.textContent = card.dataset.name;
-            date_created.textContent = card.dataset.date_created;
-            date_modified.textContent = card.dataset.date_modified;
+            date_created.textContent = "Date Created: " + card.dataset.date_created;
+            date_modified.textContent = "Date Modified: " + card.dataset.date_modified;
             desc.textContent = card.dataset.description;
 
             if(card.dataset.date_modified){
