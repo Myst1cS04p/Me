@@ -3,24 +3,39 @@
 - name: Discord
   url: https://discord.gg/gkc7dSS8Ef
   img: discord.png
-  alt: Discord
+  alt: Myst1cS04p's Discord Profile
 
 - name: GitHub
   url: https://github.com/myst1cs04p-real
   img: github.png
-  alt: GitHub
+  alt: Myst1cS04p's GitHub Profile
 
 - name: Itch.io
   url: https://myst1cs04p.itch.io
   img: itch.png
-  alt: Itch.io
+  alt: Myst1cS04p's Itch.io Profile
 
 - name: Gmail
   url: mailto:myst1cs04p@email.com
   img: gmail.png
-  alt: Gmail
+  alt: Myst1cS04p's Gmail
 
 - name: LinkedIn
   url: https://www.linkedin.com/in/myst1cs04p/
   img: linkedin.png
-  alt: LinkedIn
+  alt: Myst1cS04p's LinkedIn
+
+- name: Modrinth
+  url: https://modrinth.com/user/myst1cs04p
+  img: modrinth.png
+  alt: Myst1cS04p's Modrinth Profile
+
+- name: PaperMC
+  url: https://hangar.papermc.io/Myst1cS04p
+  img: papermc.png
+  alt: Myst1cS04p's PaperMC Profile
+
+- name: SpigotMC
+  url: https://www.spigotmc.org/members/myst1cs04p.2400217/
+  img: spigotmc.png
+  alt: Myst1cS04p's SpigotMC Profile
