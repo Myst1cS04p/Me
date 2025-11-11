@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalOverlay = document.getElementById('project-modal-overlay');
     const modal = document.getElementById('project-modal');
     const title = modal.querySelector('.modal-title');
-    const date = modal.querySelector('.modal-date');
+    const date_created = modal.querySelector('.modal-date-created');
+    const date_modified = modal.querySelector('.modal-date-modified');
     const desc = modal.querySelector('.modal-description');
     const cta = modal.querySelector('.modal-cta');
     const closeBtn = modal.querySelector('.modal-close');
@@ -53,17 +54,24 @@ document.addEventListener('DOMContentLoaded', function () {
         card.addEventListener('click', () => {
             const devlog = card.dataset.devlog;
             title.textContent = card.dataset.name;
-            date.textContent = card.dataset.date;
+            date_created.textContent = card.dataset.date_created;
+            date_modified.textContent = card.dataset.date_modified;
             desc.textContent = card.dataset.description;
+
+            if(card.dataset.date_modified){
+                date_modified.style.display = 'inline-block';
+            }
+            else{
+                date_modified.style.display = 'none';
+            }
+
             if (card.dataset.cta && card.dataset.link) {
                 cta.textContent = card.dataset.cta;
                 cta.href = card.dataset.link;
                 cta.style.display = 'inline-block';
-                console.log("shown button");
             }
             else{
                 cta.style.display = 'none';
-                console.log("hidden button");
             }
 
             if (devlog) {

@@ -11,15 +11,20 @@
     <div class="portfolio-grid">
         {% for project in site.projects %}
         <div class="portfolio-card" style="--hover-color: {{ project.color | default: '#ffffff' }};"
-            data-name="{{ project.name }}" data-date="{{ project.date | date: " %B %d, %Y" }}"
+            data-name="{{ project.name }}" data-date_created="{{ project.date_created | date: " %B %d, %Y" }}" data-date_modified="{{ project.date_modified | date: " %B %d, %Y" }}"
             data-description="{{ project.description }}" data-cta="{{ project.cta }}" data-link="{{ project.link }}" data-devlog="{{ project.devlog }}">
+
+            <!-- METADATA for SEO -->
+            <meta name="project" content="{{ project.name }}">
+            <meta name="description" content="{{ project.description }}"
+            <meta name="date_created" content="{{ project.date_created }}">
 
             <div class="portfolio-card-image">
                 <img src="{{ project.image | relative_url }}" alt="{{ project.name }} thumbnail">
             </div>
             <div class="portfolio-card-hover">
                 <h3>{{ project.name }}</h3>
-                <p class="portfolio-date">{{ project.date | date: "%Y" }}</p>
+                <p class="portfolio-date">{{ project.date_created | date: "%Y" }}</p>
             </div>
         </div>
         {% endfor %}
@@ -33,7 +38,8 @@
         <button class="modal-close" aria-label="Close modal">&times;</button>
         <div class="modal-content">
             <h2 class="modal-title"></h2>
-            <p class="modal-date"></p>
+            <p class="modal-date-created"></p>
+            <p class="modal-date-modified"></p>
             <div id="modal-text">
                 <p class="modal-description"></p>
             </div>
