@@ -13,14 +13,13 @@
         <div class="portfolio-card" style="--hover-color: {{ project.color | default: '#ffffff' }};"
             data-name="{{ project.name }}" data-date_created="{{ project.date_created | date: " %B %d, %Y" }}" data-date_modified="{{ project.date_modified | date: " %B %d, %Y" }}"
             data-description="{{ project.description }}" data-cta="{{ project.cta }}" data-link="{{ project.link }}" data-devlog="{{ project.devlog }}">
-
-            <!-- METADATA for SEO -->
-            <meta name="project" content="{{ project.name }}">
-            <meta name="description" content="{{ project.description }}"
-            <meta name="date_created" content="{{ project.date_created }}">
-
+        
             <div class="portfolio-card-image">
-                <img src="{{ project.image | relative_url }}" alt="{{ project.name }} thumbnail">
+                {% if project.image %}
+                    <img src="{{ project.image | relative_url }}" alt="{{ project.name }} thumbnail">
+                {% else %}
+                    <img src="{{ 'assets/img/fallback.png' | relative_url }}" alt="{{ project.name }} thumbnail">
+                {% endif %}
             </div>
             <div class="portfolio-card-hover">
                 <h3>{{ project.name }}</h3>
