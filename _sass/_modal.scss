@@ -51,7 +51,8 @@
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 2rem;
-    overflow-y: scroll;
+    max-height: 45vh;
+    overflow-y: auto;
 }
 
 .modal-cta {
