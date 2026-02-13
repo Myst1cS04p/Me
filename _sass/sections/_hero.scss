@@ -7,7 +7,7 @@
 .hero-section {
   height: 100vh;
   position: relative;
-  background-color: var(--bg-color);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, var(--second-bg-color) 50%, var(--second-bg-color) 100%);
   color: #ffffff;
   padding: 6vh var(--space-lg);
   text-align: center;
