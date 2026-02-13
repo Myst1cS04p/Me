@@ -1,0 +1,107 @@
+// ============================================
+// UNIFIED CARD COMPONENT
+// ============================================
+// Reusable card styling for portfolio & articles
+
+@import 'mixins';
+
+.card {
+  @include card-base;
+  aspect-ratio: 1 / 0.8;
+
+  // Card hover effects
+  @include card-hover;
+  @include card-image-hover;
+
+  // Image container
+  &__image {
+    @include card-image;
+  }
+
+  // Hover overlay content
+  &__overlay {
+    @include card-overlay;
+  }
+
+  // Show overlay on hover
+  &:hover &__overlay {
+    opacity: 1;
+  }
+
+  // Title styling
+  &__title {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    margin: 0;
+  }
+
+  // Date/meta info
+  &__date {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    color: #bbb;
+  }
+}
+
+// --------------------------------------------
+// Portfolio Card Variant
+// --------------------------------------------
+
+.portfolio-card {
+  @extend .card;
+
+  // Larger border radius for portfolio cards
+  border-radius: var(--radius-2xl);
+  border-width: 10px;
+}
+
+// --------------------------------------------
+// Article Card Variant
+// --------------------------------------------
+
+.article-card {
+  @extend .card;
+  
+  // Square aspect ratio for articles
+  aspect-ratio: 1 / 1;
+  width: 20rem;
+  max-width: 100%;
+  border-radius: var(--radius-lg);
+  border-width: 6px;
+
+  // Article-specific image sizing
+  .card__image {
+    height: 200px;
+    border-radius: 14px;
+  }
+
+  // Article meta section (below image)
+  &__meta {
+    padding: 0.8rem 0.5rem;
+    text-align: left;
+  }
+
+  // Article title as link
+  &__title-link {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    color: var(--hover-color);
+    text-shadow: 0 0 8px var(--hover-color);
+    text-decoration: none;
+    transition: text-shadow var(--transition-base);
+
+    &:hover {
+      text-shadow: 0 0 12px var(--hover-color);
+    }
+  }
+
+  .card__date {
+    margin: 0.3rem 0 0 0;
+  }
+
+  // Override overlay behavior for articles (they don't use it)
+  .card__overlay {
+    display: none;
+  }
+}

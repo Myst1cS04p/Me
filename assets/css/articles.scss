@@ -1,9 +1,22 @@
 ---
 ---
 
-@import 'vars';
-@import 'footer';
-// @import 'header';
-@import 'articles';
-@import 'article_index';
-@import 'glow';
+// ============================================
+// ARTICLES PAGE STYLES
+// ============================================
+
+// Core
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'base';
+
+// Components
+@import 'components/glow';
+@import 'components/card';
+
+// Sections
+@import 'sections/articles';
+
+// Footer (if needed)
+// @import 'footer';

@@ -1,31 +1,24 @@
----
+<!-- ---
 layout: base
 ---
 
+{% include components/section-glow.html glow_ids="articles-glow-1,articles-glow-2" %}
+
 <div id="articles-section">
+  <div class="articles-heading-wrapper">
+    <h2 class="articles-heading">Posts</h2>
+  </div>
 
-<div class="glow-containter">
-    <div id="articles-overlay-glow"></div>
-    <div id="articles-overlay-glow1"></div>
-</div>
-
-
-<div class="articles-heading-wrapper">
-    <h2 class="articles-heading"> Posts </h2>
-</div>
-
-<section class="articles-grid">
+  <section class="articles-grid">
     {% for article in site.articles %}
-    <div class="article-card" style="--hover-color: {{ article.color | default: '#ffffff' }}">
-        <a href="{{ article.url | relative_url }}" class="article-card-image">
-            <img src="{{ article.cover | relative_url }}" alt="{{ article.title }}">
-        </a>
-        <div class="article-meta">
-            <a href="{{ article.url | relative_url }}" class="article-title">{{ article.title }}</a>
-            <p class="article-date">{{ article.date | date: "%B %d, %Y" }}</p>
-        </div>
-    </div>
+      {% include components/card.html 
+         type="article"
+         name=article.title
+         image=article.cover
+         date=article.date
+         url=article.url
+         color=article.color
+      %}
     {% endfor %}
-</section>
-
-</div>
+  </section>
+</div> -->

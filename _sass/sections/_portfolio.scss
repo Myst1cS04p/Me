@@ -1,0 +1,31 @@
+// ============================================
+// PORTFOLIO SECTION
+// ============================================
+
+@import 'mixins';
+
+#portfolio-section {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--second-bg-color) 25%, var(--second-bg-color) 75%, rgba(255, 255, 255, 0) 100%);
+  padding: var(--space-3xl) var(--space-lg) var(--space-2xl);
+  overflow: hidden;
+  z-index: var(--z-background);
+
+  @include mobile {
+    padding: var(--space-3xl) var(--space-2xl) var(--space-2xl);
+  }
+}
+
+.portfolio-heading-wrapper {
+  @include section-heading-wrapper;
+}
+
+.portfolio-heading {
+  @include section-heading(var(--bright-blue));
+}
+
+.portfolio-grid {
+  @include responsive-grid(260px, var(--space-lg), 1200px);
+}
+
+// Portfolio cards use the unified .portfolio-card class from components/_card.scss

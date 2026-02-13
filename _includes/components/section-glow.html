@@ -1,0 +1,20 @@
+<!-- 
+ {% comment %}
+  Reusable Section Glow Component
+  
+  Usage:
+  {% include components/section-glow.html 
+     glow_ids="hero-glow-1,hero-glow-2" 
+  %}
+  
+  Parameters:
+  - glow_ids: Comma-separated list of glow element IDs
+  {% endcomment %}
+-->
+
+<div class="glow-container">
+  {% assign ids = include.glow_ids | split: "," %}
+  {% for id in ids %}
+    <div id="{{ id | strip }}"></div>
+  {% endfor %}
+</div>

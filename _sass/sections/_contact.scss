@@ -1,0 +1,89 @@
+// ============================================
+// CONTACT SECTION
+// ============================================
+
+@import 'mixins';
+
+.contact-section {
+  position: relative;
+  color: var(--text-color);
+  padding: var(--space-3xl) var(--space-lg) var(--space-2xl);
+  overflow: hidden;
+}
+
+.contact-heading-wrapper {
+  @include section-heading-wrapper;
+}
+
+.contact-heading {
+  @include section-heading(var(--bright-yellow));
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: var(--z-elevated);
+  gap: var(--space-lg);
+}
+
+.contact-text {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  text-align: center;
+  max-width: 700px;
+  padding: 0 var(--space-md);
+}
+
+// --------------------------------------------
+// Contact Icons
+// --------------------------------------------
+
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+
+  a {
+    display: inline-block;
+    transition: transform var(--transition-fast), box-shadow var(--transition-base);
+
+    img {
+      width: 50px;
+      height: 50px;
+      filter: drop-shadow(0 0 8px var(--color-yellow));
+      transition: filter var(--transition-base);
+    }
+
+    &:hover {
+      transform: scale(1.1);
+
+      img {
+        filter: drop-shadow(0 0 14px var(--color-yellow));
+      }
+    }
+  }
+}
+
+// --------------------------------------------
+// Resume Button
+// --------------------------------------------
+
+.contact-resume {
+  margin-top: var(--space-sm);
+
+  .resume-btn {
+    @include button-glow(var(--color-yellow), var(--bg-color));
+    font-size: var(--text-lg);
+    padding: 0.75rem 1.5rem;
+
+    &:hover {
+      background-color: lighten(#FFEA00, 10%);
+    }
+  }
+}

@@ -1,0 +1,132 @@
+// ============================================
+// DESIGN SYSTEM VARIABLES
+// ============================================
+// Central design tokens for consistent theming
+// Last updated: 2025
+
+:root {
+  // --------------------------------------------
+  // Primary Color Palette
+  // --------------------------------------------
+  --color-red: #F50057;
+  --color-red-orange: #FF3D00;
+  --color-orange: #FF6F00;
+  --color-yellow: #FFEA00;
+  --color-green: #00E676;
+  --color-blue: #00CFFF;
+  --color-pink: #FF77B9;
+  --color-purple: #5D09E4;
+  --color-black: #1A1A2E;
+
+  // --------------------------------------------
+  // Bright/Light Variants (for text on dark)
+  // --------------------------------------------
+  --bright-yellow: #ffff2d;    // pale yellow-white
+  --bright-red: #ff3474;       // pinkish white
+  --bright-blue: #18d8ff;      // icy blue-white
+
+  // --------------------------------------------
+  // Background Colors
+  // --------------------------------------------
+  --bg-color: #1B1524;         // primary background
+  --second-bg-color: #14142b;  // secondary/elevated background
+  --text-color: #9FA5B2;       // body text
+
+  // --------------------------------------------
+  // Glow Effect Colors (with transparency)
+  // --------------------------------------------
+  --glow-purple: rgba(160, 32, 240, 0.35);
+  --glow-purple-mid: rgba(160, 32, 240, 0.25);
+  --glow-purple-low: rgba(160, 32, 240, 0.15);
+  
+  --glow-red: rgba(245, 0, 87, 0.25);
+  --glow-red-low: rgba(245, 0, 87, 0.15);
+  
+  --glow-blue: rgba(0, 207, 255, 0.25);
+  --glow-blue-low: rgba(0, 207, 255, 0.15);
+
+  --glow-yellow: rgba(255, 234, 0, 0.25);
+  --glow-orange: rgba(255, 111, 0, 0.25);
+
+  // --------------------------------------------
+  // Typography
+  // --------------------------------------------
+  --font-display: 'Edit Undo BRK', monospace;
+  --font-pixel: 'Pixel Game', monospace;
+  --font-body: 'IBM Plex Mono', monospace;
+
+  // Font Sizes
+  --text-xs: 0.85rem;
+  --text-sm: 0.95rem;
+  --text-base: 1rem;
+  --text-lg: 1.1rem;
+  --text-xl: 1.3rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.7rem;
+
+  // --------------------------------------------
+  // Spacing System
+  // --------------------------------------------
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  // --------------------------------------------
+  // Border Radius
+  // --------------------------------------------
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+  --radius-2xl: 70px;
+  --radius-full: 50%;
+
+  // --------------------------------------------
+  // Transitions
+  // --------------------------------------------
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  // --------------------------------------------
+  // Z-Index Layers
+  // --------------------------------------------
+  --z-background: 0;
+  --z-content: 1;
+  --z-elevated: 2;
+  --z-modal-overlay: 999;
+  --z-modal: 1000;
+
+  // --------------------------------------------
+  // Shadows & Glows
+  // --------------------------------------------
+  --shadow-sm: 0 0 15px;
+  --shadow-md: 0 0 25px;
+  --shadow-lg: 0 0 30px;
+  --shadow-xl: 0 0 60px;
+
+  // Box shadow patterns (use with colors)
+  // Example: box-shadow: var(--shadow-md) var(--color-blue), var(--shadow-xl) var(--color-blue);
+}
+
+// --------------------------------------------
+// Semantic Color Mapping
+// (Maps colors to their usage contexts)
+// --------------------------------------------
+
+// Section-specific colors
+$hero-primary: var(--color-purple);
+$hero-secondary: var(--color-red);
+
+$about-primary: var(--color-red);
+
+$portfolio-primary: var(--color-blue);
+
+$contact-primary: var(--color-yellow);
+
+$articles-primary: var(--color-yellow);
+$articles-secondary: var(--color-orange);

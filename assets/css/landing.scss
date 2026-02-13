@@ -1,16 +1,23 @@
 ---
 ---
 
-@import 'vars';
+// ============================================
+// LANDING PAGE STYLES
+// ============================================
+
+// Core
+@import 'variables';
+@import 'mixins';
 @import 'fonts';
 @import 'base';
-@import 'glow';
-@import 'hero';
-@import 'about';
-@import 'portfolio';
-@import 'modal';
-@import 'contact';
-@import 'responsive';
-@import 'firefox';
 
-// @import 'test';
+// Components
+@import 'components/glow';
+@import 'components/card';
+@import 'components/modal';
+
+// Sections
+@import 'sections/hero';
+@import 'sections/about';
+@import 'sections/portfolio';
+@import 'sections/contact';

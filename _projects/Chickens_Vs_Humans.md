@@ -1,5 +1,6 @@
 ---
 name: Chickens Vs Humans
+creation_year: 2023
 date_created: 13th July 2023
 date_modified: 
 description: Tower defense strategy game, made during the MLabs 2023 Summer Program (placed top 14 + 'Ridiculously Engaging Game' Award). In Chickens vs Humans, you play as a magical chicken defending your precious eggs from invading human farmers. Using a mana system inspired by Clash Royale, players deploy a variety of egg types—fire, ice, bomb, necromancy, and more—each with unique effects and costs. The goal is to strategically manage your mana and unleash the right eggs at the right time to protect your nest.

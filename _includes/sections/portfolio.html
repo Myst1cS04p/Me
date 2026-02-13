@@ -1,0 +1,41 @@
+{% include components/section-glow.html glow_ids="portfolio-glow" %}
+
+<section id="portfolio-section">
+  <div class="portfolio-heading-wrapper">
+    <h2 class="portfolio-heading">Portfolio</h2>
+  </div>
+
+  <div class="portfolio-grid">
+    {% assign sorted_projects = site.projects | sort: 'creation_year' | reverse %}
+
+    {% for project in sorted_projects %}
+      {% include components/card.html 
+         type="portfolio"
+         name=project.name
+         image=project.image
+         date=project.date_created
+         color=project.color
+         data_attrs=project
+      %}
+    {% endfor %}
+  </div>
+</section>
+
+
+<!-- Modal stays here as it's section-specific -->
+<script src="{{ 'js/components/modal.js' | relative_url }}"></script>
+<div id="project-modal-overlay" class="modal-overlay hidden">
+  <div id="project-modal" class="modal">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="modal-content">
+      <h2 class="modal-title"></h2>
+      <p class="modal-date-created"></p>
+      <p class="modal-date-modified"></p>
+      <div id="modal-text">
+        <p class="modal-description"></p>
+      </div>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="modal-cta"></a>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="modal-devlog hidden">View Devlog</a>
+    </div>
+  </div>
+</div>

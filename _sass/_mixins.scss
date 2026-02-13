@@ -1,0 +1,238 @@
+// ============================================
+// MIXINS - Reusable SCSS Patterns
+// ============================================
+
+// --------------------------------------------
+// Responsive Breakpoints
+// --------------------------------------------
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+// --------------------------------------------
+// Glow Effects
+// --------------------------------------------
+
+// Base glow animation
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+// Apply glow base styling
+@mixin glow-base {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(300px);
+  animation: pulseGlow 4s ease-in-out infinite;
+  will-change: transform, opacity;
+  contain: strict;
+}
+
+// Create positioned glow with color
+@mixin section-glow($color, $top, $left, $size: 900px, $duration: 4s, $blur: 300px) {
+  @include glow-base;
+  top: $top;
+  left: $left;
+  width: clamp(400px, 60vw, $size);
+  height: clamp(400px, 60vw, $size);
+  background: radial-gradient(circle, $color 50%, transparent 70%);
+  filter: blur($blur);
+  animation-duration: $duration;
+}
+
+// --------------------------------------------
+// Card Components
+// --------------------------------------------
+
+// Base card container
+@mixin card-base($border-radius: 70px, $border-width: 10px) {
+  position: relative;
+  overflow: hidden;
+  border: $border-width solid transparent;
+  border-radius: $border-radius;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: #111;
+}
+
+// Card hover state
+@mixin card-hover {
+  &:hover {
+    border-color: var(--hover-color);
+    box-shadow: 
+      0 0 25px var(--hover-color),
+      0 0 60px var(--hover-color);
+  }
+}
+
+// Card image container
+@mixin card-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+}
+
+// Card image hover effect
+@mixin card-image-hover {
+  &:hover .card-image img {
+    transform: scale(1.1);
+  }
+}
+
+// Card overlay content
+@mixin card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(12, 12, 30, 0.8));
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+  h3 {
+    font-family: 'Edit Undo BRK', monospace;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+}
+
+// --------------------------------------------
+// Section Headings
+// --------------------------------------------
+
+@mixin section-heading($color, $size: 2.7rem) {
+  font-size: $size;
+  color: $color;
+  
+  // Inner shadow (dimmed, smaller blur)
+  text-shadow: 
+    0 0 1px,
+    0 0 1px,
+    0 0 1px,
+    0 0 20px,
+    0 0 30px;
+  
+  font-family: 'Edit Undo BRK', monospace;
+}
+
+
+@mixin section-heading-wrapper {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+// --------------------------------------------
+// Grid Layouts
+// --------------------------------------------
+
+@mixin responsive-grid($min-width: 260px, $gap: 2rem, $max-width: 1200px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: $gap;
+  max-width: $max-width;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+// --------------------------------------------
+// Text Glow Effects
+// --------------------------------------------
+
+@mixin text-glow($color, $blur: 10px) {
+  color: $color;
+  text-shadow: 0 0 $blur $color;
+}
+
+@mixin text-glow-strong($color, $blur-1: 10px, $blur-2: 20px) {
+  text-shadow: 
+    0 0 $blur-1 $color,
+    0 0 $blur-2 $color;
+}
+
+// --------------------------------------------
+// Buttons
+// --------------------------------------------
+
+@mixin button-base {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-family: 'Edit Undo BRK', monospace;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+@mixin button-glow($color, $text-color: #000) {
+  @include button-base;
+  background-color: $color;
+  color: $text-color;
+  box-shadow: 0 0 15px $color, 0 0 30px $color;
+
+  &:hover {
+    box-shadow: 0 0 25px $color, 0 0 50px $color;
+  }
+}
+
+// --------------------------------------------
+// Utility Mixins
+// --------------------------------------------
+
+// Center content
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Prevent text selection
+@mixin no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+// Smooth scroll
+@mixin smooth-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}

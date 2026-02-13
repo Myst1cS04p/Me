@@ -1,0 +1,64 @@
+// ============================================
+// HERO SECTION
+// ============================================
+
+@import 'mixins';
+
+.hero-section {
+  height: 100vh;
+  position: relative;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, var(--second-bg-color) 50%, var(--second-bg-color) 100%);
+  color: #ffffff;
+  padding: 6vh var(--space-lg);
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  @include flex-center;
+  height: 100vh;
+}
+
+// --------------------------------------------
+// Logo
+// --------------------------------------------
+
+.hero-logo {
+  width: 15vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-full);
+  border: 8px solid var(--color-purple);
+  box-shadow:
+    0 0 25px var(--color-purple),
+    0 0 50px var(--color-purple);
+  margin-bottom: 1.5rem;
+
+  @include mobile {
+    width: 50vw;
+  }
+}
+
+// --------------------------------------------
+// Text
+// --------------------------------------------
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  @include text-glow-strong(var(--color-purple));
+  margin: var(--space-sm) 0;
+}
+
+.hero-tagline {
+  font-family: var(--font-pixel);
+  font-size: clamp(1rem, 3vw, 2rem);
+  @include text-glow(var(--color-purple), 8px);
+}
+
+.warning {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 3vw, 2rem);
+  @include text-glow-strong(var(--color-red));
+  margin: var(--space-sm) 0;
+}
