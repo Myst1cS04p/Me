@@ -1,0 +1,32 @@
+// ============================================
+// ARTICLES SECTION
+// ============================================
+
+@import 'mixins';
+
+#articles-section {
+  position: relative;
+  background-image: radial-gradient(
+    ellipse at center,
+    var(--bg-color) 0%,
+    var(--second-bg-color) 100%
+  );
+  padding: var(--space-3xl) var(--space-lg) var(--space-2xl);
+  overflow: hidden;
+  z-index: var(--z-background);
+}
+
+.articles-heading-wrapper {
+  @include section-heading-wrapper;
+}
+
+.articles-heading {
+  @include section-heading(var(--bright-yellow));
+}
+
+.articles-grid {
+  @include responsive-grid(260px, var(--space-lg), 1200px);
+  justify-items: center;
+}
+
+// Article cards use the unified .article-card class from components/_card.scss

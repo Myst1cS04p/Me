@@ -1,5 +1,6 @@
 ---
 name: TF2 Item Pricing Tool
+creation_year: 2024
 date_created: 20th July 2024
 date_modified: 
 description: Developed a data-driven market analysis tool for Team Fortress 2, aggregating item prices from multiple trading platforms. Identified arbitrage opportunities by comparing buy/sell orders to detect profitable price gaps.

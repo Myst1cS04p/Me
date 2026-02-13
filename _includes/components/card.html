@@ -1,0 +1,78 @@
+<!-- 
+ {% comment %}
+  Reusable Card Component
+  
+  Usage (Portfolio):
+  {% include components/card.html 
+     type="portfolio"
+     name=project.name
+     image=project.image
+     date=project.date_created
+     color=project.color
+     data_attrs=project
+  %}
+  
+  Usage (Article):
+  {% include components/card.html 
+     type="article"
+     name=article.title
+     image=article.cover
+     date=article.date
+     url=article.url
+     color=article.color
+  %}
+  
+  Parameters:
+  - type: "portfolio" or "article"
+  - name: Display name/title
+  - image: Image path
+  - date: Date to display
+  - color: Hover color (optional, defaults to #ffffff)
+  - url: Link URL (for articles)
+  - data_attrs: Object with data attributes (for portfolio modals)
+  {% endcomment %}
+-->
+
+{% assign card_color = include.color | default: '#ffffff' %}
+
+{% if include.type == "portfolio" %}
+  <!-- Portfolio Card -->
+  <div class="portfolio-card card" 
+       style="--hover-color: {{ card_color }};"
+       data-name="{{ include.data_attrs.name }}" 
+       data-date_created="{{ include.data_attrs.date_created | date: '%B %d, %Y' }}" 
+       data-date_modified="{{ include.data_attrs.date_modified | date: '%B %d, %Y' }}"
+       data-description="{{ include.data_attrs.description }}" 
+       data-cta="{{ include.data_attrs.cta }}" 
+       data-link="{{ include.data_attrs.link }}" 
+       data-devlog="{{ include.data_attrs.devlog }}">
+    
+    <div class="card__image">
+      {% if include.image %}
+        <img src="{{ include.image | relative_url }}" alt="{{ include.name }} thumbnail">
+      {% else %}
+        <img src="{{ 'assets/img/fallback.png' | relative_url }}" alt="{{ include.name }} thumbnail">
+      {% endif %}
+    </div>
+    
+    <div class="card__overlay">
+      <h3 class="card__title">{{ include.name }}</h3>
+      <p class="card__date">{{ include.date | date: "%Y" }}</p>
+    </div>
+  </div>
+
+{% elsif include.type == "article" %}
+  <!-- Article Card -->
+  <div class="article-card card" style="--hover-color: {{ card_color }}">
+    <a href="{{ include.url | relative_url }}" class="card__image">
+      <img src="{{ include.image | relative_url }}" alt="{{ include.name }}">
+    </a>
+    
+    <div class="article-card__meta">
+      <a href="{{ include.url | relative_url }}" class="article-card__title-link">
+        {{ include.name }}
+      </a>
+      <p class="card__date">{{ include.date | date: "%B %d, %Y" }}</p>
+    </div>
+  </div>
+{% endif %}

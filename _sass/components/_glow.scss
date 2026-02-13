@@ -1,0 +1,136 @@
+// ============================================
+// GLOW EFFECTS SYSTEM
+// ============================================
+// Centralized glow effects for all sections
+
+@import 'mixins';
+
+// --------------------------------------------
+// Glow Container
+// --------------------------------------------
+
+.section-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: var(--z-content);
+}
+
+// --------------------------------------------
+// Hero Section Glows
+// --------------------------------------------
+
+#hero-glow-1 {
+  @include section-glow(var(--glow-purple), 15%, 80%, 900px, 5s);
+
+  // Firefox optimization
+  @supports (-moz-appearance: none) {
+    background: radial-gradient(circle, var(--glow-purple-low) 50%, transparent 70%);
+  }
+
+  @include mobile {
+    width: 150vw;
+    height: 150vw;
+    right: -130%;
+    top: 5%;
+    background: radial-gradient(circle, var(--glow-purple-mid) 40%, transparent 70%);
+    filter: blur(100px);
+  }
+}
+
+#hero-glow-2 {
+  @include section-glow(var(--glow-red), 40%, 0%, 900px, 4s);
+
+  @include mobile {
+    width: 180vw;
+    height: 180vw;
+    top: 35%;
+    left: -30%;
+    background: radial-gradient(circle, var(--glow-red-low) 40%, transparent 80%);
+    filter: blur(90px);
+  }
+}
+
+// --------------------------------------------
+// About Section Glow
+// --------------------------------------------
+
+#about-glow {
+  @include section-glow(var(--glow-red), 50%, 90%, 900px, 2s);
+
+  @include mobile {
+    width: 180vw;
+    height: 180vw;
+    top: 20%;
+    right: -70%;
+    background: radial-gradient(circle, var(--glow-red-low) 40%, transparent 80%);
+    filter: blur(90px);
+  }
+}
+
+// --------------------------------------------
+// Portfolio Section Glow
+// --------------------------------------------
+
+#portfolio-glow {
+  @include section-glow(var(--glow-blue-low), 65%, 40%, 900px, 4s);
+
+  @include mobile {
+    top: 60%;
+    width: 160vw;
+    height: 500vw;
+    filter: blur(300px);
+    background: radial-gradient(ellipse, var(--glow-blue-low) 20%, transparent 70%);
+  }
+}
+
+// --------------------------------------------
+// Contact Section Glow
+// --------------------------------------------
+
+#contact-glow {
+  @include section-glow(var(--glow-yellow), 95%, 75%, 900px, 4s);
+
+  @include mobile {
+    top: 90%;
+    left: 50%;
+    width: 75vw;
+    height: 75vw;
+    filter: blur(150px);
+    background: radial-gradient(ellipse, var(--glow-yellow) 10%, transparent 50%);
+  }
+}
+
+// --------------------------------------------
+// Articles Section Glows
+// --------------------------------------------
+
+#articles-glow-1 {
+  @include section-glow(var(--glow-yellow), 20%, 70%, 900px, 10s);
+
+  @include mobile {
+    // Hidden on mobile for performance
+    background: transparent;
+  }
+}
+
+#articles-glow-2 {
+  @include section-glow(var(--glow-orange), 80%, 20%, 900px, 5s);
+
+  @include mobile {
+    top: 50%;
+    left: 50%;
+    width: 15vw;
+    height: 6000vw;
+    filter: blur(200px);
+    background: radial-gradient(ellipse, var(--glow-yellow) 2%, transparent 50%);
+  }
+}
