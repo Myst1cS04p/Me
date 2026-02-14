@@ -135,18 +135,18 @@
 
 @mixin section-heading($color, $size: 2.7rem) {
   font-size: $size;
-  color: $color;
+
+  $color-text: color-mix(in srgb, $color, white 80%);
+  color: $color-text;
   
-  // Inner shadow (dimmed, smaller blur)
   text-shadow: 
-    0 0 1px,
-    0 0 1px,
-    0 0 1px,
-    0 0 20px,
-    0 0 30px;
+    0 0 1px $color,
+    0 0 1px $color,
+    0 0 1px $color,
+    0 0 20px $color,
+    0 0 30px $color;
   
   font-family: 'Edit Undo BRK', monospace;
-  letter-spacing: 0.05em;
 }
 
 
