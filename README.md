@@ -17,7 +17,7 @@ basically just a place where i dump my game dev projects, tools, or whatever els
 ## you can have ts if you want
 
 code isn't that bad, if anyone wants to take it and use it on their own shi, feel free.
-but like if somebody acc does end up using ts, feel free to reach out and show it off to me cuz other humans using my work excites me
+but like if somebody acc does end up using ts, feel free to [reach out](https://myst1cs04p.github.io/Me/#:~:text=2021-,Hit%20Me%20Up!,-Reach%20out%20through) and show it off to me cuz other humans using my work excites me
 
 ---
 
