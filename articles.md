@@ -1,5 +1,5 @@
 ---
 layout: articles
-title: Devlogs and Posts
+permalink: /articles/
 css: assets/css/articles.css
 ---

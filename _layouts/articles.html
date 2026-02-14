@@ -1,16 +1,23 @@
-<!-- ---
+---
 layout: base
+title: Articles & Blog Posts
+description: Thoughts on game development, systems thinking, and building things that matter.
+css: assets/css/articles.css
 ---
 
 {% include components/section-glow.html glow_ids="articles-glow-1,articles-glow-2" %}
 
 <div id="articles-section">
   <div class="articles-heading-wrapper">
-    <h2 class="articles-heading">Posts</h2>
+    <h2 class="articles-heading">inconsistent blog</h2>
+    <p class="articles-subheading">
+      Certified shitposting ;)
+    </p>
   </div>
 
   <section class="articles-grid">
-    {% for article in site.articles %}
+    {% assign sorted_articles = site.articles | sort: 'date' | reverse %}
+    {% for article in sorted_articles %}
       {% include components/card.html 
          type="article"
          name=article.title
@@ -18,7 +25,15 @@ layout: base
          date=article.date
          url=article.url
          color=article.color
+         excerpt=article.excerpt
+         reading_time=article.reading_time
       %}
     {% endfor %}
   </section>
-</div> -->
+
+  {% if site.articles.size == 0 %}
+  <div class="articles-empty">
+    <p>No articles yet. Check back soon!</p>
+  </div>
+  {% endif %}
+</div>

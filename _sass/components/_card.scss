@@ -62,8 +62,8 @@
 .article-card {
   @extend .card;
   
-  // Square aspect ratio for articles
-  aspect-ratio: 1 / 1;
+  // Taller card to accommodate excerpt
+  aspect-ratio: 1 / 1.3;
   width: 20rem;
   max-width: 100%;
   border-radius: var(--radius-lg);
@@ -77,8 +77,11 @@
 
   // Article meta section (below image)
   &__meta {
-    padding: 0.8rem 0.5rem;
+    padding: var(--space-md);
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
   }
 
   // Article title as link
@@ -90,14 +93,43 @@
     text-shadow: 0 0 8px var(--hover-color);
     text-decoration: none;
     transition: text-shadow var(--transition-base);
+    line-height: 1.3;
 
     &:hover {
       text-shadow: 0 0 12px var(--hover-color);
     }
   }
 
+  // Excerpt
+  &__excerpt {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  // Info row (date + reading time)
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    color: var(--text-color);
+    margin-top: var(--space-xs);
+  }
+
+  &__reading-time {
+    &::before {
+      content: '•';
+      margin-right: var(--space-xs);
+      opacity: 0.5;
+    }
+  }
+
   .card__date {
-    margin: 0.3rem 0 0 0;
+    margin: 0;
   }
 
   // Override overlay behavior for articles (they don't use it)

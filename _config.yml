@@ -7,10 +7,31 @@ theme: null
 username: Myst1cS04p
 tagline: DEVELOPER | SYSTEMS THINKER | PROTOTYPE ALCHEMIST
 
+# Collections
 collections:
   projects:
     output: true
     permalink: /projects/:name
   articles:
     output: true
-    permalink: /blogs/:name
+    permalink: /articles/:title
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "post"
+
+# Markdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Exclude files from build
+exclude:
+  - README.md
