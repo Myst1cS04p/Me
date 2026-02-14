@@ -144,10 +144,6 @@ document.addEventListener('DOMContentLoaded', function () {
       updateHeading(color, true);
     });
 
-    card.addEventListener('mouseleave', () => {
-      updateHeading(color, false);
-    });
-
     // Click: Open modal
     card.addEventListener('click', () => openModal(card));
   });
