@@ -169,11 +169,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // ==========================================
-  // SYNTAX HIGHLIGHTING (if you add it later)
-  // ==========================================
-  
-  // If you add Prism.js or highlight.js, initialize here
-  // Example: if (window.Prism) Prism.highlightAll();
-  
 });
