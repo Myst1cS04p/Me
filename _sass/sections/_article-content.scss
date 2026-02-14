@@ -5,7 +5,16 @@
 
 @import 'mixins';
 
+::-webkit-scrollbar {
+  width: 5px; 
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--article-color);
+}
+
 .post {
+  scrollbar-width: thin; 
   background-color: var(--bg-color);
   min-height: 100vh;
   position: relative;
@@ -157,9 +166,9 @@
 .post-progress-container {
   position: sticky;
   top: 0;
-  z-index: 100;
   height: 3px;
   background: rgba(255, 255, 255, 0.05);
+  z-index: 99999;
 }
 
 .post-progress-bar {
@@ -203,7 +212,8 @@
   padding: var(--space-md);
   max-height: calc(100vh - 120px);
   overflow-y: auto;
-  
+  z-index: 1000;
+
   @include mobile {
     position: relative;
     top: 0;

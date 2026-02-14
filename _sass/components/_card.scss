@@ -1,21 +1,25 @@
 // ============================================
 // UNIFIED CARD COMPONENT
 // ============================================
-// Reusable card styling for portfolio & articles
-
-@import 'mixins';
 
 .card {
   @include card-base;
   aspect-ratio: 1 / 0.8;
+  overflow: hidden; // Ensure content doesn't overflow
+  display: flex;
+  flex-direction: column;
 
   // Card hover effects
   @include card-hover;
   @include card-image-hover;
 
-  // Image container
+  // Image container (with 70% height)
   &__image {
     @include card-image;
+    height: 70%; // Adjusted to 70% of card height
+    object-fit: cover; // Ensure the image covers the container
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%); // Fade from top to bottom
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
   }
 
   // Hover overlay content
@@ -44,18 +48,6 @@
 }
 
 // --------------------------------------------
-// Portfolio Card Variant
-// --------------------------------------------
-
-.portfolio-card {
-  @extend .card;
-
-  // Larger border radius for portfolio cards
-  border-radius: var(--radius-2xl);
-  border-width: 10px;
-}
-
-// --------------------------------------------
 // Article Card Variant
 // --------------------------------------------
 
@@ -68,11 +60,16 @@
   max-width: 100%;
   border-radius: var(--radius-lg);
   border-width: 6px;
+  
+  display: flex;
+  flex-direction: column; // Flexbox layout to stack content
 
   // Article-specific image sizing
   .card__image {
-    height: 200px;
     border-radius: 14px;
+    height: 70%;
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%); // Apply gradient fade
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
   }
 
   // Article meta section (below image)
@@ -82,6 +79,10 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
+    z-index: 50;
+    flex-grow: 1; // Allow meta to take available space
+    overflow: auto; // Add scroll if content overflows
+    flex-shrink: 0; // Prevent shrinking if content is too large
   }
 
   // Article title as link
