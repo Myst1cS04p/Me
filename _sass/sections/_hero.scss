@@ -62,3 +62,18 @@
   @include text-glow-strong(var(--color-red));
   margin: var(--space-sm) 0;
 }
+
+// --------------------------------------------
+// Button
+// --------------------------------------------
+.hero-button {
+  @include button-base;
+  padding: 0.75rem var(--space-lg);
+  font-size: var(--text-lg);
+  margin: 0 var(--space-xs);
+  @include button-glow(var(--color-purple), color-mix(in srgb, var(--color-purple), white 50%));
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

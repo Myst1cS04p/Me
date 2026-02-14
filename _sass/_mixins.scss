@@ -177,7 +177,8 @@
 // --------------------------------------------
 
 @mixin text-glow($color, $blur: 10px) {
-  color: $color;
+  $color-text: color-mix(in srgb, $color, white 50%);
+  color: $color-text;
   text-shadow: 0 0 $blur $color;
 }
 
