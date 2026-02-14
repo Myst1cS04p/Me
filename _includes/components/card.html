@@ -68,28 +68,28 @@
 {% elsif include.type == "article" %}
   <!-- Article Card -->
 
-  <div class="article-card card" style="--hover-color: {{ card_color }}">
-  <div class="card__image">
-    {% if include.image %}
-      <img src="{{ include.image | relative_url }}" alt="{{ include.name }}">
-    {% endif %}
-  </div>
-  
-  <div class="article-card__meta">
-    <a href="{{ include.url | relative_url }}" class="article-card__title-link">
-      {{ include.name }}
-    </a>
-
-    {% if include.excerpt %}
-      <p class="article-card__excerpt">{{ include.excerpt | truncate: 100 }}</p>
-    {% endif %}
-
-    <div class="article-card__info">
-      <time class="card__date">{{ include.date | date: "%B %d, %Y" }}</time>
-      {% if include.reading_time %}
-        <span class="article-card__reading-time">{{ include.reading_time }}</span>
+ <div class="article-card card" style="--hover-color: {{ card_color }}" onclick="window.location.href='{{ include.url | relative_url }}'">
+    <div class="card__image">
+      {% if include.image %}
+        <img src="{{ include.image | relative_url }}" alt="{{ include.name }}">
       {% endif %}
     </div>
+
+    <div class="article-card__meta">
+      <h3 class="article-card__title">
+        {{ include.name }}
+      </h3>
+
+      {% if include.excerpt %}
+        <p class="article-card__excerpt">{{ include.excerpt | truncate: 100 }}</p>
+      {% endif %}
+
+      <div class="article-card__info">
+        <time class="card__date">{{ include.date | date: "%B %d, %Y" }}</time>
+        {% if include.reading_time %}
+          <span class="article-card__reading-time">{{ include.reading_time }}</span>
+        {% endif %}
+      </div>
+    </div>
   </div>
-</div>
 {% endif %}

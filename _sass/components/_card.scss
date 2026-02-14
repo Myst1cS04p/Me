@@ -56,12 +56,15 @@
 }
 
 // --------------------------------------------
-// Article Card Variant (merged from B)
+// Article Card Variant 
 // --------------------------------------------
 
 .article-card {
   @extend .card;
-  
+
+  // Add cursor pointer to indicate it's clickable
+  cursor: pointer;
+
   // Taller card to accommodate excerpt
   aspect-ratio: 1 / 1.3;
   width: 20rem;
@@ -94,8 +97,8 @@
     flex-shrink: 0; // Prevent shrinking if content is too large
   }
 
-  // Article title as link
-  &__title-link {
+  // Article title
+  &__title {
     display: inline-block;
     font-family: var(--font-display);
     font-size: var(--text-xl);
@@ -104,10 +107,6 @@
     text-decoration: none;
     transition: text-shadow var(--transition-base);
     line-height: 1.3;
-
-    &:hover {
-      text-shadow: 0 0 12px var(--hover-color);
-    }
   }
 
   // Excerpt
