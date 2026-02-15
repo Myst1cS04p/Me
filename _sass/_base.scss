@@ -5,3 +5,16 @@ body {
     overflow-x: hidden;
     scroll-padding-bottom: 0;
 }
+
+::-webkit-scrollbar {
+    width: 5px; 
+}
+
+::-webkit-scrollbar-track {
+    background: rgba($color: #000000, $alpha: 0);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-purple);
+}

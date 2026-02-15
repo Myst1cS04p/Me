@@ -20,13 +20,73 @@
   @include section-heading-wrapper;
 }
 
+.heading-with-back {
+  width: 100%;
+  margin-bottom: var(--space-lg);
+  
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; 
+  align-items: center;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: var(--space-md);
+  }
+}
+
+.articles-back {
+  justify-self: start; 
+  display: flex;
+  
+  @include mobile {
+    width: 100%;          // Container takes full width
+    justify-content: center; 
+    padding: 0;
+  }
+}
+
 .articles-heading {
   @include section-heading(var(--bright-yellow));
+  margin: 0;
+  grid-column: 2; 
+  text-align: center;
+  white-space: nowrap;
+
+  @include mobile {
+    width: 100%;
+    text-align: center; 
+  }
 }
+
 
 .articles-grid {
   @include responsive-grid(260px, var(--space-lg), 1200px);
   justify-items: center;
 }
 
-// Article cards use the unified .article-card class from components/_card.scss
+.articles-back-link {
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center; // Ensure SVG is centered in button
+  @include button-glow(var(--color-yellow), var(--bg-color));
+  font-family: var(--font-body);
+  
+  @include mobile {
+    font-size: var(--text-sm);
+    padding: 0.5rem 1rem;
+  }
+  
+  svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+    
+    @include mobile {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

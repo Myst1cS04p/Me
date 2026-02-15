@@ -56,52 +56,82 @@
 }
 
 // --------------------------------------------
-// Article Card Variant
+// Article Card Variant 
 // --------------------------------------------
 
 .article-card {
   @extend .card;
+  cursor: pointer;
   
-  // Square aspect ratio for articles
-  aspect-ratio: 1 / 1;
-  width: 20rem;
-  max-width: 100%;
+  width: 100%; 
+  max-width: 20rem; 
+  aspect-ratio: 1 / 1.4; 
   border-radius: var(--radius-lg);
   border-width: 6px;
+  overflow: hidden; 
+  position: relative;
 
-  // Article-specific image sizing
-  .card__image {
-    height: 200px;
-    border-radius: 14px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #0a0a0a;    
+  border-color: color-mix(in srgb, var(--hover-color) 30%, #242424);
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0) 0%, 
+      rgba(10, 10, 10, 0.8) 50%, 
+      rgba(10, 10, 10, 1) 100% 
+    );
   }
 
-  // Article meta section (below image)
+  // 4. Content Layout
+  &__content {
+    position: relative;
+    z-index: 2; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+  }
+
   &__meta {
-    padding: 0.8rem 0.5rem;
+    padding: var(--space-lg) var(--space-md) var(--space-md);
     text-align: left;
   }
 
-  // Article title as link
-  &__title-link {
-    display: inline-block;
+  &__title {
     font-family: var(--font-display);
-    font-size: var(--text-xl);
+    font-size: 1.25rem;
     color: var(--hover-color);
-    text-shadow: 0 0 8px var(--hover-color);
-    text-decoration: none;
-    transition: text-shadow var(--transition-base);
 
-    &:hover {
-      text-shadow: 0 0 12px var(--hover-color);
-    }
+    text-shadow: 0 0 10px var(--hover-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
   }
 
-  .card__date {
-    margin: 0.3rem 0 0 0;
+  &__excerpt {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+    margin-bottom: 1rem;
   }
 
-  // Override overlay behavior for articles (they don't use it)
-  .card__overlay {
-    display: none;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
+
+  .card__overlay { display: none; }
+  .card__image { display: none; }
 }
