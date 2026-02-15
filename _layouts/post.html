@@ -93,20 +93,6 @@ layout: base
           <p>{{ page.author_bio }}</p>
         </div>
       {% endif %}
-      
-      <!-- Tags Footer -->
-      {% if page.tags %}
-        <div class="post-tags-footer">
-          <h3>Tags</h3>
-          <div class="post-tags">
-            {% for tag in page.tags %}
-              <a href="{{ site.baseurl }}/articles/tag/{{ tag | slugify }}" class="post-tag">
-                {{ tag }}
-              </a>
-            {% endfor %}
-          </div>
-        </div>
-      {% endif %}
     </div>
   </div>
 
