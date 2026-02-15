@@ -562,7 +562,7 @@
 .post-related {
   max-width: 1400px;
   margin: 0 auto;
-  padding: var(--space-3xl) var(--space-lg);
+  padding: var(--space-lg);
   
   @include mobile {
     padding: var(--space-xl) var(--space-md);
@@ -586,7 +586,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-lg);
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   
   & > * {
