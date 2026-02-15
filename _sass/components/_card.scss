@@ -61,88 +61,77 @@
 
 .article-card {
   @extend .card;
-
-  // Add cursor pointer to indicate it's clickable
   cursor: pointer;
-
-  // Taller card to accommodate excerpt
-  aspect-ratio: 1 / 1.3;
-  width: 20rem;
-  max-width: 100%;
+  
+  width: 100%; 
+  max-width: 20rem; 
+  aspect-ratio: 1 / 1.4; 
   border-radius: var(--radius-lg);
   border-width: 6px;
+  overflow: hidden; 
+  position: relative;
 
-  display: flex;
-  flex-direction: column; // Flexbox layout to stack content
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #0a0a0a;    
+  border-color: color-mix(in srgb, var(--hover-color) 30%, #242424);
 
-  // Article-specific image sizing
-  .card__image {
-    border-radius: 14px;
-    height: 70%; // Adjusted to 70% of card height
-    object-fit: cover; // Ensure the image covers the container
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%); // Fade from top to bottom
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0) 0%, 
+      rgba(10, 10, 10, 0.8) 50%, 
+      rgba(10, 10, 10, 1) 100% 
+    );
   }
 
-  // Article meta section (below image)
-  &__meta {
-    padding: var(--space-md);
-    text-align: left;
+  // 4. Content Layout
+  &__content {
+    position: relative;
+    z-index: 2; 
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: var(--space-xs);
-    z-index: 50;
-    flex-grow: 1; // Allow meta to take available space
-    overflow: auto; // Add scroll if content overflows
-    flex-shrink: 0; // Prevent shrinking if content is too large
+    justify-content: flex-end; 
   }
 
-  // Article title
+  &__meta {
+    padding: var(--space-lg) var(--space-md) var(--space-md);
+    text-align: left;
+  }
+
   &__title {
-    display: inline-block;
     font-family: var(--font-display);
-    font-size: var(--text-xl);
+    font-size: 1.25rem;
     color: var(--hover-color);
-    text-shadow: 0 0 8px var(--hover-color);
-    text-decoration: none;
-    transition: text-shadow var(--transition-base);
-    line-height: 1.3;
+
+    text-shadow: 0 0 10px var(--hover-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
   }
 
-  // Excerpt
   &__excerpt {
-    font-family: var(--font-body);
-    font-size: var(--text-xs);
-    color: var(--text-color);
-    line-height: 1.5;
-    margin: 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+    margin-bottom: 1rem;
   }
 
-  // Info row (date + reading time)
   &__info {
     display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    font-family: var(--font-body);
-    font-size: var(--text-xs);
-    color: var(--text-color);
-    margin-top: var(--space-xs);
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
-  &__reading-time {
-    &::before {
-      content: '•';
-      margin-right: var(--space-xs);
-      opacity: 0.5;
-    }
-  }
-
-  .card__date {
-    margin: 0;
-  }
-
-  // Override overlay behavior for articles (they don't use it)
-  .card__overlay {
-    display: none;
-  }
+  .card__overlay { display: none; }
+  .card__image { display: none; }
 }
