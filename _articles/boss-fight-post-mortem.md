@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Boss Fight Postmortem: My First Game Jam"
-date: 2021-06-15
+date: 2025-02-14
 author: Myst1cS04p
 tags: [game dev, game jam, GDevelop, postmortem]
 color: "#E01BFF"
