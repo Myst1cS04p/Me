@@ -109,9 +109,9 @@
   &__title {
     font-family: var(--font-display);
     font-size: 1.25rem;
-    color: var(--hover-color);
+    letter-spacing: 0.05em;
 
-    text-shadow: 0 0 10px var(--hover-color);
+    @include text-glow(var(--hover-color), 10px);
     margin-bottom: 0.5rem;
     line-height: 1.2;
   }
