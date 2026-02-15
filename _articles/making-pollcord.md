@@ -8,7 +8,8 @@ color: "#1b76ffff"
 excerpt: "Discord recently introduced a native polling system. It’s clean, built into the platform, and honestly much nicer than the reaction-based polls most bots use. The problem? There wasn’t a simple, lightweight Python wrapper that let you create and manage these polls without dragging in an entire Discord bot framework."
 reading_time: "5 min read"
 css: assets/css/articles.css
-cover: 
+cover: assets/img/articles/covers/pollcord.gif
+title-image: assets/img/articles/titles/pollcord.png
 ---
 
 ## Why I Built It

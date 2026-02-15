@@ -8,7 +8,8 @@ color: "#E01BFF"
 excerpt: "A look back at my first-ever game, created in 48 hours for the Dev Pad Game Jam. What went right, what went wrong, and what I learned."
 reading_time: "5 min read"
 css: assets/css/articles.css
-cover: /assets/img/project_icons/BossFight.png
+cover: /assets/img/articles/covers/boss-fight.png
+title-image: /assets/img/articles/titles/boss-fight.png
 ---
 
 **Boss Fight** was my debut game project, created for the Dev Pad Game Jam in May 2021. It marked several firsts for me: first game, first team collaboration, and first time sharing a project with others.

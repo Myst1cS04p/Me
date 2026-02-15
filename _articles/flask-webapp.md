@@ -8,7 +8,8 @@ color: "#4a90e2ff"
 excerpt: "In the pre-AI era, I decided to tackle Harvard’s CS50 final project at age 11. No ChatGPT, no Copilot—just me, some Flask documentation, and a dream of building a gaming portal. Looking back at the code is a mix of awe and pure horror."
 reading_time: "4.5 min read"
 css: assets/css/articles.css
-cover: 
+cover: assets/img/articles/covers/cs50.png
+title-image: assets/img/articles/titles/cs50.png
 ---
 
 ## The Audacity of Youth
