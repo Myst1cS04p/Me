@@ -73,20 +73,20 @@
     
     <div class="article-card__content">
       <div class="article-card__meta">
-        <h3 class="article-card__title">
-          {{ include.name }}
-        </h3>
-
         {% if include.excerpt %}
-          <p class="article-card__excerpt">{{ include.excerpt | truncate: 85 }}</p>
+        <p class="article-card__excerpt">{{ include.excerpt | truncate: 85 }}</p>
         {% endif %}
-
+        
         <div class="article-card__info">
           <time class="card__date">{{ include.date | date: "%B %d, %Y" }}</time>
           {% if include.reading_time %}
-            <span class="article-card__reading-time">{{ include.reading_time }}</span>
+          <span class="article-card__reading-time">{{ include.reading_time }}</span>
           {% endif %}
         </div>
+        <h3 class="article-card__title">
+          {{ include.name }}
+        </h3>
+        
       </div>
     </div>
   </div>
