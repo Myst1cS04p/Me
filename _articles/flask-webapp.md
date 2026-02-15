@@ -66,7 +66,9 @@ data_from_client = tmp
 tmp = eval(data_from_client) # <--- OH NO.
 ```
 
-For those who don't know: using `eval()` on data coming from a user is essentially handing them a loaded gun and pointing it at your server. It’s the ultimate "Don't Do This" in programming. But hey, it made the data parsing work, and that was all 11-year-old me cared about.
+For those who don't know: using `eval()` on data coming from a user is essentially handing them a loaded gun and pointing it at your server. `eval()` executes any string you give it as python code. So if a user, for example were to pass in something like `"__import__('os').system('rm -rf /')"` and you ran `eval()` on it, the code would actually execute.
+
+But hey, it made the data parsing work, and that was all 11-year-old me cared about.
 
 ### 2. Password Security (Or Lack Thereof)
 
