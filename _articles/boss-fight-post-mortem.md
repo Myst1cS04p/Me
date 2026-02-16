@@ -3,7 +3,7 @@ layout: post
 title: "Boss Fight Postmortem: My First Game Jam"
 date: 2025-02-14
 author: Myst1cS04p
-tags: [game dev, game jam, GDevelop, postmortem]
+tags: [game dev, game jam, GDevelop, collaboration]
 color: "#E01BFF"
 excerpt: "A look back at my first-ever game, created in 48 hours for the Dev Pad Game Jam. What went right, what went wrong, and what I learned."
 reading_time: "5 min read"

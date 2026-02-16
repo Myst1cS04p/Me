@@ -3,7 +3,7 @@ layout: post
 title: "Chickens Vs Humans: What Happens When Your Team Disappears"
 date: 2025-02-15
 author: Myst1cS04p
-tags: [game-jam, unity, game-design, mobile-optimization]
+tags: [game jam, unity, game-design, mobile-optimization, collaboration]
 color: "#fff235ff"
 excerpt: "In August 2023, I entered a nation-wide game jam with a team of five. By the end, I'd done 95% of the work alone, spent days debugging projectile physics, learned mobile optimization from scratch, and watched my 'team leader' walk away with the award plaque. The game won 'Ridiculously Engaging Game' and placed top 20. This is what actually happened."
 reading_time: "10 min read"
