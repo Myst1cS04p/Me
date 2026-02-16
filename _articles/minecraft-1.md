@@ -6,6 +6,7 @@ author: Myst1cS04p
 tags: [minecraft, leadership, game-theory, social-dynamics]
 color: "#d48141ff"
 excerpt: "I was accused of using Creative Mode because I was too good at PvP. My friends split off to make their own server. And I learned that being right doesn't matter if everyone hates you for it."
+description: "I was accused of using Creative Mode because I was too good at PvP. My friends split off to make their own server. And I learned that being right doesn't matter if everyone hates you for it."
 reading_time: "5 min read"
 css: assets/css/articles.css
 cover: assets/img/articles/covers/minecraft-1.png

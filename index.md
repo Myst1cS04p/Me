@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Myst1cS04p
+title: Mystic's tuff af site
 css: /assets/css/landing.css
 ---

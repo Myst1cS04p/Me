@@ -6,6 +6,7 @@ author: Myst1cS04p
 tags: [minecraft, social dynamics, forensics, security, leadership, trust, tooling]
 color: "#b33131ff"
 excerpt: "A merger that grew the server 6x. A cheating scandal. A framing attempt. And a YouTube video that admitted defeat. Sometimes the best security is just knowing your stuff works."
+description: "A merger that grew the server 6x. A cheating scandal. A framing attempt. And a YouTube video that admitted defeat. Sometimes the best security is just knowing your stuff works."
 reading_time: "20 min read"
 css: assets/css/articles.css
 cover: assets/img/articles/covers/minecraft-3.png

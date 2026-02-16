@@ -6,6 +6,7 @@ author: Myst1cS04p
 tags: [minecraft, social dynamics, systems-design, governance, java, discord-bots]
 color: "#7513d6ff"
 excerpt: "After losing my server to mob rule, I rebuilt it with weighted democracy, a three-tier rule system, and transparency plugins. Turns out political science and DevOps solve the same problems."
+description: "After losing my server to mob rule, I rebuilt it with weighted democracy, a three-tier rule system, and transparency plugins. Turns out political science and DevOps solve the same problems."
 reading_time: "6 min read"
 css: assets/css/articles.css
 cover: assets/img/articles/covers/minecraft-2.png
