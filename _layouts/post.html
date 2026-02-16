@@ -98,13 +98,44 @@ layout: base
   </div>
 
   <!-- Related Articles -->
-  {% if site.articles.size > 1 %}
-  <section class="post-related">
-    <h2>Related Articles</h2>
-    <div class="post-related-grid">
-      {% assign related = site.articles | where_exp: "item", "item.url != page.url" | sample: 3 %}
-      {% for article in related limit:3 %}
-        {% include components/card.html
+{% if site.articles.size > 1 %}
+<section class="post-related">
+  <h2>Related Articles</h2>
+  <div class="post-related-grid">
+
+    {% assign scored = "" | split: "" %}
+
+    {% for article in site.articles %}
+      {% if article.url != page.url %}
+
+        {% assign overlap = 0 %}
+
+        {% for tag in article.tags %}
+          {% if page.tags contains tag %}
+            {% assign overlap = overlap | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+
+        {% if overlap > 0 %}
+          {% assign padded = overlap | prepend: "000" | slice: -3, 3 %}
+          {% assign entry = padded | append: "||" | append: article.url %}
+          {% assign scored = scored | push: entry %}
+        {% endif %}
+
+      {% endif %}
+    {% endfor %}
+
+    {% assign sorted = scored | sort | reverse %}
+    {% assign top_matches = sorted | slice: 0, 3 %}
+
+    {% assign used_urls = "" | split: "" %}
+    {% for item in top_matches %}
+      {% assign parts = item | split: "||" %}
+      {% assign url = parts[1] %}
+      {% assign article = site.articles | where: "url", url | first %}
+      {% assign used_urls = used_urls | push: url %}
+
+      {% include components/card.html
         type="article"
         name=article.title
         image=article.title-image
@@ -113,13 +144,61 @@ layout: base
         color=article.color
         excerpt=article.excerpt
         reading_time=article.reading_time
+      %}
+    {% endfor %}
+
+    {% assign remaining = 3 | minus: top_matches.size %}
+    {% if remaining > filler_pool.size %}
+      {% assign remaining = filler_pool.size %}
+    {% endif %}
+
+    {% if remaining > 0 %}
+
+      {% assign filler_pool = "" | split: "" %}
+
+      {% for article in site.articles %}
+
+        {% if article.url != page.url %}
+
+          {% unless used_urls contains article.url %}
+            {% assign filler_pool = filler_pool | push: article %}
+          {% endunless %}
+
+        {% endif %}
+
+      {% endfor %}
+
+      {% if remaining == 1 %}
+        {% assign single = filler_pool | sample %}
+        {% assign random_fillers = "" | split: "" %}
+        {% assign random_fillers = random_fillers | push: single %}
+      {% else %}
+        {% assign random_fillers = filler_pool | sample: remaining %}
+      {% endif %}
+
+
+      {% for article in random_fillers %}
+        {% include components/card.html
+          type="article"
+          name=article.title
+          image=article.title-image
+          date=article.date
+          url=article.url
+          color=article.color
+          excerpt=article.excerpt
+          reading_time=article.reading_time
         %}
       {% endfor %}
-    </div>
-    <h3 class="post-tags-footer" style="color: var(--text-color);"><strong>Comment Section Coming <s>probably not</s>
-        Soon</strong></h3>
-  </section>
-  {% endif %}
+
+    {% endif %}
+
+
+  </div>
+</section>
+{% endif %}
+
+
+
 
 
   <!-- Back to Articles -->
