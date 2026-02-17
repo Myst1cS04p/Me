@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://myst1cs04p.github.io/Me/</loc>
+  <lastmod>2026-02-17T13:41:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://myst1cs04p.github.io/Me/articles/</loc>
+  <lastmod>2026-02-17T13:41:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://myst1cs04p.github.io/Me/articles/minecraft-3</loc>
+  <lastmod>2026-02-17T13:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://myst1cs04p.github.io/Me/articles/minecraft-2</loc>
+  <lastmod>2026-02-17T13:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://myst1cs04p.github.io/Me/articles/minecraft-1</loc>
+  <lastmod>2026-02-17T13:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://myst1cs04p.github.io/Me/articles/flask-webapp</loc>
+  <lastmod>2026-02-17T13:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://myst1cs04p.github.io/Me/articles/makings-of-chickens-vs-humans</loc>
+  <lastmod>2026-02-17T13:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://myst1cs04p.github.io/Me/articles/making-pollcord</loc>
+  <lastmod>2026-02-17T13:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://myst1cs04p.github.io/Me/articles/boss-fight-post-mortem</loc>
+  <lastmod>2026-02-17T13:41:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
