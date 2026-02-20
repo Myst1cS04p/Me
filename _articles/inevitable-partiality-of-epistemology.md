@@ -4,11 +4,13 @@ title: "Inevitable Partiality: On Prior Commitments, Invisible Frameworks, and t
 date: 2026-02-20
 author: Myst1cS04p
 tags: [philosophy, epistemology, metaphysics, theory, ontology]
-color: "#7B2FBE"
+color: "#c6c9ca"
 excerpt: "Neutrality is impossible. You are always governed by something. The only live question is whether you know what it is"
 description: "An examination of why ungrounded reasoning is incoherent, how bias is not a flaw in human cognition but its operating system, and why intelligence amplifies whatever governs it rather than resolving the problem of what that should be."
 reading_time: "12 min read"
 css: assets/css/articles.css
+cover: assets/img/articles/covers/partiality.png
+title-image: assets/img/articles/covers/partiality.png
 ---
 
 
