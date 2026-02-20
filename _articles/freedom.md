@@ -1,176 +1,147 @@
 ---
 layout: post
-title: "Enslaved by Existence: On Freedom, Causation, and the Choice of Submission"
+title: "Inevitable Partiality: On Prior Commitments, Invisible Frameworks, and the Myth of Neutral Reason"
 date: 2026-02-20
 author: Myst1cS04p
-tags: [philosophy, freedom, metaphysics, theory]
+tags: [philosophy, epistemology, metaphysics, theory, ontology]
 color: "#7B2FBE"
-excerpt: "Why freedom is a logical impossibility. Why submission is not the enemy. And why the real question has never been whether you submit, but to what."
-description: "A philosophical examination of why uncaused action is incoherent, what it means that every human decision is shaped by something prior, and why the most important thing you can do is choose your submission consciously rather than inherit it blindly."
-reading_time: "8 min read"
+excerpt: "Neutrality is impossible. You are always governed by something. The only live question is whether you know what it is"
+description: "An examination of why ungrounded reasoning is incoherent, how bias is not a flaw in human cognition but its operating system, and why intelligence amplifies whatever governs it rather than resolving the problem of what that should be."
+reading_time: "12 min read"
 css: assets/css/articles.css
 ---
 
+
 There is a premise most people carry without ever examining it.
 
-The premise is that freedom is real — that you can, in principle, act without being caused to act. That somewhere in the human being there is an uncaused originating force, a self that precedes its influences, a will that exists prior to the conditions that shaped it. This premise is the foundation of how most people think about autonomy, responsibility, choice, meaning.
+The premise is that reason, rationality, and evidence are the bedrock of understanding. That conclusions arise from a foundational engagement with the world, untouched by prior beliefs, uncolored by personal biases, and rooted in the most rigorous epistemological principles. That the procedural rigorous thinking self is able to neutralize priors and bias.
 
-The premise is false. And once you see why, the question changes entirely.
-
----
-
-## What Freedom Would Have to Mean
-
-Before deciding whether freedom exists, you have to be precise about what it would mean for it to exist.
-
-There are downstream definitions — legal freedom, political freedom, freedom from coercion — but those are all contingent on prior concepts. They describe the absence of a specific kind of interference. They don't say anything about whether action itself can be uncaused.
-
-At the foundational level, freedom has to mean *uncaused action*. An action that originates from nothing that preceded it. A choice that is not the product of anything — not your hunger, not your history, not the neural configuration of the brain doing the choosing, not the values you absorbed before you were old enough to interrogate them.
-
-That's what freedom would have to be, if it's going to be something more than a downstream legal category.
-
-And that's precisely what's incoherent.
+This premise is the invisible load-bearing wall of modern intellectual self-image. And it doesn't hold.
 
 ---
 
-## The Structure of Causation
+## Action Has No Origin Outside the Causal Structure
 
-Consider a man sitting at a table with food before him. A simple scenario, deliberately chosen.
+Start with the simpler version of the claim, before reaching the harder one.
 
-Whatever he does next, something caused it. If he eats, he acts from hunger, or appetite, or habit, or the social norm of eating when food is present, or the desire not to waste, or the mere proximity of the thing. If he doesn't eat, he acts from the same general structure of causes pointing a different direction — distraction, illness, discipline, disgust, time pressure, some passing thought that redirected his attention.
+Consider a man sitting at a table with food before him. A simple scenario, deliberately chosen. Whatever he does next, something caused it. If he eats, he acts from hunger, appetite, habit, or the social norm of eating when food is present. If he doesn't eat, he acts from the same causal structure pointing a different direction, distraction, discipline, illness, some passing thought that redirected his attention.
 
-There is no third option. There is no gap in the causal structure through which an uncaused self inserts its free decision. Every action is a response to something. Every refusal is a response to something. Even the attempt to escape this logic is a response to something — the discomfort the logic produces, the philosophical conviction that it must be wrong, the ego investment in being the kind of person who has genuine freedom.
+There is no third option. No gap in the causal structure through which an uncaused self inserts a free decision. Every action is a response to something. Every refusal is equally a response to something. Even the rejection of this premise is a response to something, the discomfort it produces, the philosophical conviction that it must be wrong, the investment in being the kind of person for whom this isn't true.
 
-Ironically, even the rejection of this premise is obedience to something.
+The relevant objection arrives quickly: if every decision is produced by prior causes, then decisions aren't really made. They just happen, like a rock falling.
 
----
+This doesn't follow. Causation does not collapse into mechanism. The decision-making agent is still the proximate cause of the action, even if the agent itself was produced by prior causes. What gets eliminated is not choice, it's the fantasy of choice *ex nihilo*, choice that emerged from nothing. Actions are not fixed. They are simply not uncaused.
 
-## What This Does Not Mean
+This matters because the same structure applies one level up. If uncaused action is incoherent, then ungrounded reasoning is too. You cannot act from nowhere. You cannot think from nowhere either, because thinking is itself an act.
 
-The obvious objection is: if nothing is uncaused, then nothing is chosen. If every decision is produced by prior causes, then the decision isn't really made — it just happens, like a rock falling or a thermostat switching.
-
-This doesn't follow.
-
-The existence of causation does not collapse into determinism in the reductive sense. Choice is still real. Deliberation is still real. The decision-making agent is still the proximate cause of the action, even if the agent itself was produced by prior causes. What's eliminated is not choice — it's the fantasy of choice *ex nihilo*, choice that emerged from nothing.
-
-Actions aren't fixed. They are simply not uncaused. You still choose. You still deliberate. You still, in some meaningful sense, decide. It's just that the self doing the deciding is itself a product of everything that produced it — and that product is real, is yours, is the actual locus of agency even if it was assembled by forces you didn't initially select.
-
-The real question is not: *do I choose?* The real question is: *what am I choosing from, and did I have any say in constructing the menu?*
+Thinking is not outside the causal structure, it is an expression of it.
 
 ---
 
-## The Question That Remains
+## The View From Nowhere Does Not Exist
 
-If uncaused action is impossible, then submission to something is not optional. It is the structure of existence.
+Modern epistemology imagined a neutral observer, no priors, no commitments, just a mind engaging with raw evidence. This became the dominant self-image of Enlightenment rationality, and it spread so thoroughly that most educated people now treat it as a description of how thinking works rather than an aspiration that was never fully coherent.
 
-You are always governed by something. The inputs that shape your decisions, the values that rank your options, the identity that makes certain choices feel available and others feel unthinkable — these are always there. The only question is whether you know what they are.
+It is not how thinking works.
 
-Most people don't choose what governs them. They inherit it. The family, the culture, the religion or absence of religion, the social class, the peer group at fifteen — these things build the architecture of the self before the self is in any position to evaluate them. By the time you're capable of reflecting on what shaped you, you're already shaped.
+It is not how anyone thinks.
 
-The tragedy is not that you were shaped. The tragedy is inheriting a shape you never examined and spending your life acting as if it were your own free origination.
+Every reasoner assumes that reason is trustworthy. Every empiricist assumes that evidence is meaningful and that certain methods of collecting it are valid. Every moral skeptic maintains moral commitments functioning as axioms. These are not conclusions derived from more basic premises, they are givens, either inherited or chosen before any particular chain of reasoning began.
 
----
+There is an older intellectual tradition that was more honest about this. The systematic thinkers of the premodern world did not ask whether their foundational commitments were provable from a position of no commitments. They asked something structurally more precise: *given that this is my starting point, what must reality be like?* That is conditional reasoning. It acknowledges that you stand somewhere before you reason anywhere.
 
-## On What Deserves Submission
+Modern secular epistemology rejected this posture, and in rejecting it, obscured rather than escaped the underlying condition. The premodern thinker declared their starting point and argued from it. The modern thinker clothes their starting point in the language of procedure, objectivity, and evidence, then mistakes that clothing for the absence of a starting point.
 
-Here is where it gets harder, because the obvious next move — "so choose your submission consciously" — immediately runs into the problem of what, exactly, deserves to govern you.
-
-One serious answer is God. Under classical theism, if there is a perfect being, then submission to that being is not merely acceptable but is the most rational possible alignment. Perfection is the most defensible thing to organize yourself around. If you're going to be shaped by something, being shaped by something perfect is the obvious choice.
-
-The difficulty is transmission. Perfect knowledge passing through imperfect interpreters doesn't arrive intact. Humans parse, translate, emphasize, and distort — not necessarily from bad intent but from the structural limitations of being the kind of minds that we are. This isn't fatal to the religious answer, but it is a genuine complication that requires ongoing vigilance rather than passive reception.
-
-What clearly doesn't deserve unconditional submission is human opinion and social consensus. Not because people are always wrong, but because human judgment is never purely objective. It is always filtered through ego, identity, experience, status anxiety, in-group loyalty, motivated reasoning. Bias is not a correctable flaw — it is the structure of human cognition. We cannot perceive without a perspective, which means we cannot judge without one either. The question is not whether our judgment is biased but whether our bias is tracking reality or distorting it.
-
-Submitting to human consensus blindly is submitting to the aggregated distortions of imperfect minds — which might occasionally be wise but carries no guarantee of being so.
+The consequence is not neutrality. The consequence is that commitments become invisible, to the person holding them, and to anyone attempting to engage or critique them. A declared framework invites scrutiny. An undeclared one simply presents itself as the obvious way of seeing things, which is a much more fortified position than any argument could be.
 
 ---
 
-## Chosen Enslavement or Inherited Enslavement
+## We Are Flesh Before We Are Logicians
 
-Whether any authority truly deserves ultimate submission is a question that may never fully resolve. The secular answers — reason, evidence, ethical frameworks — are all constructed by the same imperfect minds they're supposed to correct.
+The observation that humans cannot reason from nowhere is not an indictment of human cognition. It is a description of it. And before that description can be understood properly, something needs to be said about what human cognition actually is, not what we would like it to be, but what it demonstrably does.
 
-But the irresolvability of the *what* does not cancel the necessity of the *that*.
+We are not reasoning machines with emotional interference. We are emotional, embodied, socially embedded creatures who also happen to be capable of reasoning. The order matters. Hunger, fear, belonging, status, identity, these are not noise in the system. They are the system. Reasoning is the later addition, the more recent capacity layered on top of much older architecture. And that older architecture does not go quiet when the reasoning begins.
 
-Something governs you. This is not a question. The only thing that remains open is whether you looked at it, evaluated it, and chose to affirm it — or whether you simply received it and never looked up.
+This is why you cannot perceive without a perspective. Perception is not passive recording, it is active interpretation, shaped by expectation, by prior experience, by what the perceiver needs to find and what they are prepared to see. Two people watching the same event construct different accounts of it, not because one is lying, but because they arrived with different equipment. That equipment is not optional. It is constitutive.
 
-Awareness increases the weight of existence, because it closes off the comfortable option of acting as though you're free. Once you see the structure clearly, you can't unsee it. You have to take some position on what deserves to shape you, because you can no longer pretend you're not being shaped.
+What we call bias is, in this frame, not a malfunction. It is the machinery itself. Bias is prior experience organized into pattern. It is how a mind that cannot process everything selects what to attend to. The question is never whether you are biased, you are, always, structurally, inescapably. Bias is your cognitive machinery. The question is whether your bias is tracking reality or distorting it. And that question is considerably harder to answer than most people acknowledge, because the instrument you would use to evaluate your own bias is the same instrument the bias runs on.
 
-This is harder than it sounds. Most of what governs people is not a single articulable thing but a dense, layered accumulation — values from childhood, instincts shaped by years of experience, aesthetic sensibilities absorbed from a culture, intellectual frameworks inherited from fields that built them for their own purposes. Untangling all of that and making a reflective choice about which parts to affirm is a real project, not a single act.
-
-But the project is worth undertaking. Because the alternative is not freedom. The alternative is enslavement by inertia rather than enslavement by choice — being governed by the accidental accumulation of whatever happened to reach you first.
+You cannot step outside your own cognition to audit it from the outside. You are always checking the map with the map.
 
 ---
 
-## The Problem of Intellect
+## The Problem of Exposure
 
-There is a tempting assumption buried in everything above: that the solution to unconscious submission is sufficient intelligence applied carefully. Think clearly enough, reason honestly enough, and you will arrive at the right submission.
+There is a further complication that doesn't get discussed enough.
 
-This assumption is false, and it is important to understand why.
+Even if you are genuinely committed to revising your beliefs when the evidence demands it, even if your orientation toward truth is real and not performed, you can only revise in response to what you have encountered. You cannot update on a rock you never looked under.
 
-Intellect is very good at building castles. It is not naturally good at choosing where to build them. A capable mind given time, identity, and motivation can defend almost any position — not through dishonesty, but through skill. It can patch holes, reframe objections, shift definitions, invoke nuance indefinitely. Intelligence in this mode serves belief rather than evaluates it.
+This is the exposure problem. And it is more serious than it sounds.
 
-This is the uncomfortable observation that high-functioning thinkers rarely make about themselves: the sharper the mind, the more convincingly it can entrench wherever it has landed. What looks like rigorous reasoning from the inside is often motivated cognition with better vocabulary.
+Most people's engagement with ideas is not random. It is shaped by geography, by class, by the intellectual communities they happened to enter, by which thinkers were legible to them at the right moment in their development, by which objections to their views they happened to encounter and which ones they never heard seriously articulated. The gaps in that exposure are invisible. You don't know what you haven't seen. The argument that would have changed your mind might exist, might be well-developed, might even be correct, and you might never come across it, not because you are closed, but because you never stumbled into the room where it was being made.
 
-There is a related trap. Nuance is a genuine intellectual virtue — but it can also function as an escape hatch from commitment. A sufficiently subtle mind can live forever in "yes, but..." It can remain in permanent provisional status, never arriving anywhere, mistaking drift for open-mindedness. Nuance without an anchor is not wisdom; it is sophisticated avoidance.
+Intellectual traditions compound this. A person trained in one framework learns to ask certain questions and not others. The questions that framework does not generate never get asked. The data that framework does not recognize as significant never gets weighted. The person remains rigorous within the tradition, careful, consistent, intellectually honest by every internal measure, while the tradition itself forecloses entire regions of inquiry that would be relevant if they were visible.
 
-The deeper problem is aesthetic. Ideas do not persuade us only through logical force. They persuade us by feeling elegant, resonating with our temperament, matching our self-image, flattering our preferred posture. We are drawn to thinkers whose way of standing in the world resembles our own — not necessarily whose conclusions are correct. This pull does not diminish with intelligence. If anything, it intensifies, because a clever mind can generate better post-hoc justifications for whatever it was already inclined toward.
+Progress often looks, in retrospect, less like better reasoning and more like broader exposure. The thing that was finally figured out was often, in some form, already in circulation, just in a room most people hadn't entered.
 
-The implication is uncomfortable: pure reason untethered from prior commitment does not converge toward truth. It wanders, and it wanders more sophisticatedly than most people notice.
+This is not a counsel of despair. You can seek out exposure deliberately. You can look for the most serious versions of views you don't hold. You can try to find the argument that would most threaten your current position and give it a real hearing. These are good practices, and they make a difference.
+
+But they don't solve the problem. They just reduce it. You will never know how many rocks you didn't look under. You will never have a complete map of your own blind spots. The confidence that your current position is well-examined is, in part, always a confidence built on ignorance of what you haven't seen.
+
+That isn't a reason to abandon the project of inquiry. It is a reason to hold your conclusions with somewhat more humility than they usually receive.
 
 ---
 
-## The Epistemic Condition Nobody Admits
+## Intelligence Is Amplification, Not Grounding
 
-There is an older intellectual tradition that understood this clearly, and its honesty deserves more credit than it typically receives.
+The tempting response to everything above is the recourse to intelligence. If the problem is unexamined prior commitments and inadequate exposure, then the solution is surely more careful reasoning, more rigorous self-examination, more sustained engagement with opposing views. Think clearly enough and you will arrive at a well-grounded position.
 
-The premodern thinkers who built the great systematic theologies did not ask whether their foundational commitments were provable from a position of no commitments. They asked something more structurally honest: *given that this is my starting point, what must reality be like?* That is conditional metaphysics. It acknowledges that you stand somewhere before you reason anywhere.
+This underestimates what intelligence actually does.
 
-Modern secular epistemology rejected this posture. It imagined a view from nowhere — a neutral observer with no priors, no sacred commitments, reasoning from raw evidence to clean conclusions. This became the dominant self-image of Enlightenment rationality, and it spread so thoroughly that most people now think this is how thinking works.
+Intelligence is not an orientation toward truth. It is a capacity that amplifies whatever orientation already governs it. A mind oriented toward truth-seeking uses greater intelligence to generate sharper self-corrections, to identify motivated reasoning before it settles, to steelman opposing positions more effectively. A mind oriented toward identity-protection uses the same greater intelligence to construct more elaborate defenses, to find more sophisticated justifications, to generate more technically impressive objections to whatever threatens the position it was already committed to.
 
-It is not how thinking works. It is not how anyone thinks.
+The sharper mind is not more biased or less biased. It is more powerful in either direction.
 
-The view from nowhere does not exist. Every reasoner assumes that reason is trustworthy. Every empiricist assumes that evidence is meaningful. Every moral skeptic maintains some moral commitments that function as axioms. These are not conclusions derived from more basic premises — they are givens, inherited or chosen before the reasoning began.
+This is why smart people do not reliably converge. If intelligence were itself an orientation toward truth, you would expect that more intelligence produces more agreement, that the most rigorous thinkers would cluster around correct positions. What you observe instead is that highly intelligent people are capable of sustaining almost any position indefinitely, with greater sophistication and more resources than a less capable mind could muster. The intelligence serves the position. It does not evaluate it.
 
-The premodern thinkers were explicit about this. The modern mind is not. And the consequence of pretending to have no prior commitments is not that you escape them. The consequence is that your commitments become invisible to you — and to everyone attempting to understand or critique your position.
+There is also a subtler trap. Nuance is a genuine intellectual virtue. But in the hands of a sufficiently capable mind, it can become an escape from commitment rather than a refinement of it. A mind with enough agility can live permanently in "yes, but...", generating endless qualification, never arriving anywhere, mistaking the suspension of commitment for open-mindedness. Provisional thinking is not the same as perpetual thinking. At some point, the examined position has to be inhabited rather than indefinitely audited.
 
-This is not a small epistemic failure. Hidden assumptions cannot be examined. Unexamined assumptions cannot be revised. A framework that presents itself as neutral is harder to challenge than a framework that declares its foundations openly, because the former appears to require no defense. It clothes its commitments in the language of procedure, objectivity, and evidence — and then mistakes that clothing for the absence of commitment.
+None of this is an argument against intelligence, or against careful reasoning. Intelligence is also the only tool capable of recognizing that it does these things, the metacognitive capacity that allows you to watch your own reasoning, detect its patterns, identify what it consistently protects. Without that capacity, no self-examination is possible at all.
 
-Public frameworks — ones that declare what they assume, what they affirm, what they exclude — invite scrutiny. That scrutiny is not a vulnerability. It is the precondition for honest engagement.
+The point is narrower: intelligence does not resolve the grounding problem. It raises the stakes. A brilliant mind with poor orientation is not safer than a mediocre mind with the same poor orientation. It is more dangerous, because it is more capable of defending what it should be revising.
 
 ---
 
 ## What Action Reveals
 
-There is a simpler version of this argument that does not require any philosophical machinery.
+There is a version of this argument that does not require philosophical machinery.
 
 Watch what people do when they have to act.
 
-No one's mind goes offline when they encounter a moral dilemma. No one experiences a gap where their commitment used to be. When a decision is required, a framework activates — instantly, automatically, without consultation. The framework was always there. The only question was whether it was visible to the person operating it.
+No one's reasoning suspends when a decision is required. When a choice is forced, a framework activates, automatically, without deliberation. The framework was always there. The only question was whether it was visible to the person operating it.
 
-This is where the claim "I have no prior commitments" fully collapses. The claim can survive in conversation, where you never have to do anything. It cannot survive action, where you always have to do something. Every choice reveals a ranking of values. Every sacrifice reveals what you treat as more important than what. Every refusal reveals a line you won't cross. These are all commitments. The person who claims none has simply not yet examined the ones that showed up on their behalf.
+This is where "I have no prior commitments" fully collapses. The claim can survive in conversation, where nothing is ever required of it. It cannot survive action, where something is always required. Every choice reveals a ranking of values. Every sacrifice reveals what you treat as more important than what. Every refusal reveals a line. These are all commitments. The person who claims none has simply not yet encountered the moments that would have made them visible.
 
-There is a version of this that applies specifically to intellect. Capable minds tend to notice, at some point, that they can argue their way into or out of almost anything. They can construct a justification for the thing they were already inclined to do. They can generate an objection to the thing they were already inclined to avoid. Once you notice this about yourself, you have to make a decision: whose reasoning do you trust? On what basis do you evaluate the quality of your own cognition from inside that cognition?
-
-The question is not rhetorical. It has an answer — or rather, a range of honest answers. But arriving at any of them requires first admitting that intelligence alone does not resolve the problem of grounding. It only raises the stakes.
+Everyone operates from some functional framework, whether or not it is internally consistent. Whether or not you are aware of it.
 
 ---
 
-## Bounds as the Condition of Agency
+## Grounding Is Not Optional
 
-Here is what this all points toward.
+You cannot escape standing somewhere. The only live question is whether you know where you stand.
 
-The question is not whether you wear chains. You wear chains. The question is what chains you wear and whether you are aware of them. Paradoxically, meaningful agency is only possible once you acknowledge your own bounds.
+Most people do not choose their starting positions. They inherit them, from family, culture, class, the intellectual traditions that shaped the disciplines they entered, the aesthetic sensibilities they absorbed before they were old enough to question them. By the time you are capable of examining what shaped you, you are already shaped. That is not a failure. That is the structure of arriving in a world that precedes you.
 
-This sounds counterintuitive. We have been trained to think that constraints reduce freedom — that fewer limits mean more choice. But unanchored choice is not freedom. It is drift. A musician is not free because they ignore musical structure; they are free because they have internalized enough structure to move deliberately within it. A thinker is not free because they hold no commitments; they are free because they have examined their commitments clearly enough to know which ones they would revise and which ones they would not.
+The problem is not inheritance. Inheritance is unavoidable. The problem is treating inherited positions as if they were neutral, as if you occupied no starting point at all, and then reasoning vigorously from that pretense.
 
-Agency requires shape. A self that stands nowhere cannot move in any direction that means anything. To choose is to exclude. To commit is to make some paths unavailable. The loss of those paths is not the loss of freedom — it is the condition of freedom having content.
+Acknowledged commitments can be examined, revised, or consciously affirmed. Unacknowledged ones cannot. They operate in the background, untouched, shaping conclusions you believe you arrived at through open inquiry. A named framework can be challenged. A framework that presents itself as no framework at all cannot, not even by the person holding it.
 
-The person who claims no commitments is not free. They are simply ungoverned by anything they have examined. They are still governed — by defaults, by culture, by temperament, by whatever won the quiet competition among their unexamined inclinations. The difference between them and the person who has looked is not the presence or absence of chains. It is only visibility.
+This does not reduce to a clean prescription. Surfacing your prior commitments is genuinely hard, because most of what governs any given person is not a single articulable thing but a dense accumulation, values from childhood, instincts from years of particular experience, aesthetic preferences that feel like perception rather than preference, reactions that feel like reason. The examination is not a single act. It is ongoing. It is never complete.
 
-Visibility matters because invisible chains cannot be chosen. And unchosen chains are not yours in any meaningful sense, even if you carry them everywhere you go.
-
-The only question existence actually leaves open is whether your submission is chosen or inherited. Whether you looked, or you didn't.
+That incompleteness is not a reason not to try. Incomplete examination is still worth more than none. You cannot escape having a starting point. You can only decide whether you know what yours is.
 
 ---
 
-*There is a harder question underneath all of this — what, specifically, is worth anchoring to, and how would you know? I don't think that resolves cleanly, and I am suspicious of anyone who claims it does. But the frame is prior. Most people never examine their chains at all. The examination is where everything begins.*
+*The harder question, what a well-examined grounding should look like, and how you'd know if you had one, doesn't resolve cleanly here. I'm not sure it should resolve in a single piece. But it is downstream of this one. Most people never get there, because they haven't accepted the prior premise: that they are standing somewhere, operating from something, and have been all along.*
+
+*This essay is not AI generated.*

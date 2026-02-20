@@ -104,3 +104,5 @@ That should make us considerably more humble about what we think we know.
 ---
 
 *The empirical questions here — about the structure of the allocation system, the degree to which it's trainable, what interventions actually shift it — deserve more careful attention than I've given them. This is the philosophical frame. The next step is finding whether the literature has already built the building I've been imagining the blueprints for.*
+
+*This essay was restructured and enhanced with the help of AI.*
