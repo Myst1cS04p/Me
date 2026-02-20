@@ -15,11 +15,11 @@ title-image: assets/img/articles/titles/think.png
 
 There is a pattern that shows up everywhere once you start looking for it.
 
-A field identifies a real problem. Researchers develop a construct to capture it. The construct requires measurement, so they find a proxy. The proxy is convenient, tractable, and visible — so it gets used repeatedly, cited heavily, built upon. And then, slowly, the field begins to treat the proxy as if it *were* the construct. The original intuition that motivated everything disappears, buried under papers that treat the measurement tool as the thing being measured.
+A field identifies a real problem. Researchers develop a construct to capture it. The construct requires measurement, so they find a proxy. The proxy is convenient, tractable, and visible, so it gets used repeatedly, cited heavily, built upon. And then, slowly, the field begins to treat the proxy as if it *were* the construct. The original intuition that motivated everything disappears, buried under papers that treat the measurement tool as the thing being measured.
 
 The construct drifts. Causal claims inflate. Critics attack the proxy and conclude the original problem wasn't real. Defenders protect the proxy and miss the critique. The field forks.
 
-Nobody is lying. Nobody is being sloppy. The drift is structural, almost inevitable. It happens because humans have a deep, almost irresistible need to *close* open questions — to find the clean version, the final version, the pure version. And purity, it turns out, is not about truth. It is about control.
+Nobody is lying. Nobody is being sloppy. The drift is structural, almost inevitable. It happens because humans have a deep, almost irresistible need to *close* open questions, to find the clean version, the final version, the pure version. And purity, it turns out, is not about truth. It is about control.
 
 ---
 
@@ -31,7 +31,7 @@ But entrenchment is hard to measure. It's latent, slow-moving, and deeply indivi
 
 That's a sensible heuristic. The problem came later.
 
-Over time, the proxy became the construct. Papers started asking: "Does time cause harm?" — as if time itself were the mechanism, rather than time being a rough signal pointing at something else. Thresholds appeared: eight hours is too many, one hour is fine. The original intuition — that what matters is whether the activity narrows a person's future options and locks their sense of self into a single domain — was lost. And once the proxy was reified, the inevitable backlash followed: studies showing that time is a weak predictor, that many high-time users are flourishing, that the threshold models collapse under scrutiny. Critics concluded the problem wasn't real. Defenders doubled down on the proxy. Neither side was asking the right question.
+Over time, the proxy became the construct. Papers started asking: "Does time cause harm?", as if time itself were the mechanism, rather than time being a rough signal pointing at something else. Thresholds appeared: eight hours is too many, one hour is fine. The original intuition, that what matters is whether the activity narrows a person's future options and locks their sense of self into a single domain, was lost. And once the proxy was reified, the inevitable backlash followed: studies showing that time is a weak predictor, that many high-time users are flourishing, that the threshold models collapse under scrutiny. Critics concluded the problem wasn't real. Defenders doubled down on the proxy. Neither side was asking the right question.
 
 This is conceptual drift. It is not a failure of intelligence or integrity. It is what happens when you mistake the map for the territory often enough that you forget the territory exists.
 
@@ -41,7 +41,7 @@ This is conceptual drift. It is not a failure of intelligence or integrity. It i
 
 What produces this pattern? I think the answer is the same thing that produces most human epistemic failures: the discomfort of incompleteness.
 
-Proxies are comforting. A latent construct is an open question — you're always at risk of having measured the wrong thing, pointed at the wrong slice, misspecified the mechanism. A proxy that has been operationalized, validated, and built into a measurement instrument feels closed. It feels *done*. The field can stop asking foundational questions and start accumulating studies.
+Proxies are comforting. A latent construct is an open question, you're always at risk of having measured the wrong thing, pointed at the wrong slice, misspecified the mechanism. A proxy that has been operationalized, validated, and built into a measurement instrument feels closed. It feels *done*. The field can stop asking foundational questions and start accumulating studies.
 
 This is not laziness. It's an entirely reasonable response to the cost of foundational uncertainty. Science would never progress if every paper had to relitigate first principles. But the cost is drift, and the cost compounds invisibly until the gap between the original intuition and the current measurement becomes a canyon.
 
@@ -154,3 +154,5 @@ The open loop is not the enemy. The open loop is where you're still learning.
 ---
 
 *There's more to say about this — specifically about how the loss-of-optionality frame applies not just to gaming disorder but to the structural logic of purity projects across domains, and about what a properly operationalized maintenance epistemology might look like. Those are separate papers. For now: this is a rough map, honestly labeled.*
+
+*This piece is primarily written by AI.*
